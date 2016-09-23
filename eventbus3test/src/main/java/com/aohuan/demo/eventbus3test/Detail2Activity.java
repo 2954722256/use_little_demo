@@ -28,6 +28,7 @@ public class Detail2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail2);
         ButterKnife.inject(this);
+        EventBus.getDefault().post(new MessageEvent("Hello everyone!"));
     }
 
 
@@ -38,7 +39,7 @@ public class Detail2Activity extends AppCompatActivity {
 
 
     private void doBack() {
-        EventBus.getDefault().post(new MessageEvent("Hello everyone!"));
+//        EventBus.getDefault().post(new MessageEvent("Hello everyone!"));
         finish();
     }
 

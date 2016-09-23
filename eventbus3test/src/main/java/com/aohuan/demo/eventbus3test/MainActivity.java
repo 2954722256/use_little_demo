@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, Detail3Activity.class));
                 break;
             case R.id.go:
-                Toast.makeText(MainActivity.this, "gogo", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "gogo", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, Detail2Activity.class));
                 break;
             case R.id.goFuture:
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void doGoFuture() {
-        Toast.makeText(MainActivity.this, "gogo2", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(MainActivity.this, "gogo2", Toast.LENGTH_SHORT).show();
         EventBus.getDefault().postSticky(new FutureBean("noName", "100"));
         startActivity(new Intent(this, Future1Activity.class));
     }

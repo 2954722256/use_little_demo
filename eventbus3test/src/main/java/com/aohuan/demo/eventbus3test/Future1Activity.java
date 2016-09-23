@@ -36,6 +36,7 @@ public class Future1Activity extends AppCompatActivity {
             case R.id.tv:
                 break;
             case R.id.back:
+                finish();
                 break;
         }
     }

@@ -25,6 +25,7 @@ public class Detail3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail3);
         ButterKnife.inject(this);
+        Sender.doSend1(new MessageBean2("dodo", "23"));
     }
 
 
@@ -36,7 +37,7 @@ public class Detail3Activity extends AppCompatActivity {
 
     private void doBack() {
 //        EventBus.getDefault().post(new MessageEvent("Hello everyone!"));
-        Sender.doSend1(new MessageBean2("dodo", "23"));
+//        Sender.doSend1(new MessageBean2("dodo", "23"));
         finish();
     }
 
