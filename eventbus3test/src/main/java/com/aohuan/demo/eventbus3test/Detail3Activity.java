@@ -29,12 +29,6 @@ public class Detail3Activity extends AppCompatActivity {
     }
 
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-
     private void doBack() {
 //        EventBus.getDefault().post(new MessageEvent("Hello everyone!"));
 //        Sender.doSend1(new MessageBean2("dodo", "23"));
