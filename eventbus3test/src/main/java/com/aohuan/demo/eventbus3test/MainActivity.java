@@ -56,15 +56,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//    @Subscribe
-//    public void handEvent(MessageEvent messageEvent) {
-//        tv.setText(messageEvent.getMessage());
-//    }
-//
-//    @Subscribe
-//    public void handEvent(MessageBean2 messageEvent) {
-//        tv.setText(messageEvent.toString());
-//    }
+    @Subscribe
+    public void handEvent(MessageEvent messageEvent) {
+        tv.setText(messageEvent.getMessage());
+    }
+
+    @Subscribe
+    public void handEvent(MessageBean2 messageEvent) {
+        tv.setText(messageEvent.toString());
+    }
 
 
     @OnClick({R.id.tv, R.id.go, R.id.goFuture})
