@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
+        Object o;
 //        EventBus.getDefault().register(this);
     }
 
@@ -55,15 +56,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @Subscribe
-    public void handEvent(MessageEvent messageEvent) {
-        tv.setText(messageEvent.getMessage());
-    }
-
-    @Subscribe
-    public void handEvent(MessageBean2 messageEvent) {
-        tv.setText(messageEvent.toString());
-    }
+//    @Subscribe
+//    public void handEvent(MessageEvent messageEvent) {
+//        tv.setText(messageEvent.getMessage());
+//    }
+//
+//    @Subscribe
+//    public void handEvent(MessageBean2 messageEvent) {
+//        tv.setText(messageEvent.toString());
+//    }
 
 
     @OnClick({R.id.tv, R.id.go, R.id.goFuture})

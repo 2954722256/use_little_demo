@@ -10,6 +10,7 @@ import com.aohuan.demo.eventbus3test.bean.FutureBean;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -60,7 +61,7 @@ public class Future1Activity extends AppCompatActivity {
     }
 
 
-    @Subscribe(sticky = true)
+    @Subscribe(sticky = true, threadMode = ThreadMode.ASYNC)
     public void handEvent(FutureBean messageEvent) {
         tv.setText(messageEvent.toString());
     }
