@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aohuan.demo.stickynav.StickNavDodoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stickyNavLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/id_topview"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="这个是上面的部分" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_indicatorview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="107px">
+            <TextView
+                android:id="@+id/m_synthesis_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:layout_centerVertical="true"
+                android:textColor="#f8484f"
+                android:layout_marginLeft="40px"
+                android:text="综合排序"/>
+            <RelativeLayout
+                android:id="@+id/m_price_order"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/m_price"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:textSize="30px"
+                    android:layout_height="wrap_content"
+                    android:text="价格"/>
+                <ImageView
+                    android:id="@+id/m_price_image"
+                    android:layout_width="17px"
+                    android:layout_height="27px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:src="@mipmap/ss_px_an"
+                    android:layout_toRightOf="@+id/m_price"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/m_scroe_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:text="销量最高"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/id_bottomview"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_bright"/>
+</com.aohuan.demo.stickynav.StickNavDodoView>
