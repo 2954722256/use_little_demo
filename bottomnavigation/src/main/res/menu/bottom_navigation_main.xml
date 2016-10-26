@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/basketball"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="basketball"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/football"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_popup_reminder"
+        android:title="football"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/volleyball"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="volleyball"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/dodo"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="dodo"
+        app:showAsAction="ifRoom" />
+</menu>
