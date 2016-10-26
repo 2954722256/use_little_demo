@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="dodo" />
+        android:text="BASKETBALL" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_navigation"
