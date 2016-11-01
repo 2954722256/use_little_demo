@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ns0"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|right"
+        android:background="#666666">
+
+        <com.aohuan.dodo.coordinator.view.NoScrollListView
+            android:id="@+id/list0"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|right" />
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ns1"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left"
+        android:background="#888888"
+        app:layout_behavior="com.aohuan.dodo.coordinator.utils.DodoBehavior1scroll">
+
+        <com.aohuan.dodo.coordinator.view.NoScrollListView
+            android:id="@+id/list1"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|left" />
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

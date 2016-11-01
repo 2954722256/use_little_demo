@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">coordinator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main1">Main1Activity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main0">Main0Activity</string>
+    <string name="title_activity_main_n0">MainN0Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="title_activity_main5">Main5Activity</string>
+</resources>

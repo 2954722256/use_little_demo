@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/annotation_test/annotation_test.iml" filepath="$PROJECT_DIR$/annotation_test/annotation_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bottomnavigation/bottomnavigation.iml" filepath="$PROJECT_DIR$/bottomnavigation/bottomnavigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coordinator/coordinator.iml" filepath="$PROJECT_DIR$/coordinator/coordinator.iml" />
       <module fileurl="file://$PROJECT_DIR$/eventbus3test/eventbus3test.iml" filepath="$PROJECT_DIR$/eventbus3test/eventbus3test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stickynav/stickynav.iml" filepath="$PROJECT_DIR$/stickynav/stickynav.iml" />
       <module fileurl="file://$PROJECT_DIR$/use_little_demo.iml" filepath="$PROJECT_DIR$/use_little_demo.iml" />
     </modules>
   </component>

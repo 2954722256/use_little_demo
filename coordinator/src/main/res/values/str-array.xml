@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页导航的跳转名字 -->
+    <string-array name="typelist">
+
+        <item>0 xxxxxxxxxx</item>
+
+        <item>1 xxxxxxxxxx</item>
+
+        <item>2 xxxxxxxxxx</item>
+
+        <item>3 xxxxxxxxxx</item>
+        <item>4 xxxxxxxxxx</item>
+
+        <item>4 xxxxxxxxxx</item>
+        <item>4 xxxxxxxxxx</item>
+        <item>4 xxxxxxxxxx</item>
+        <item>4 xxxxxxxxxx</item>
+
+
+
+    </string-array>
+
+
+
+    <!-- 只是显示用，没用 -->
+    <string-array name="temp">
+        <item>央视新闻微博消息，</item>
+        <item>早上9时20分左右，</item>
+        <item>绵绵秋雨中，</item>
+        <item>中国国民党主席洪秀柱率领中国国民党大陆访问团抵达南京中山陵拜谒，</item>
+        <item>向孙中山先生致敬。</item>
+        <item>据台湾《中国时报》报道，</item>
+        <item>国民党主席洪秀柱昨天（30日）率团登陆访问，</item>
+        <item>晚间拜会江苏省委书记李强，</item>
+        <item>今天她将循例到中山陵拜谒孙中山。</item>
+        <item>据悉，洪秀柱将准备祭文，</item>
+        <item>祭拜后将在陵园的博爱广场发表谈话。</item>
+        <item>洪秀柱30日傍晚率领访问团，</item>
+        <item>搭乘东方航空班机飞抵南京，</item>
+        <item>展开国共两党交流参访行程。</item>
+        <item>洪秀柱登机前强调，</item>
+        <item>此行为"和平之旅"，</item>
+        <item>希望两岸创造稳定的和平，</item>
+        <item>两岸人民也持续进行实质交流。</item>
+        <item>她表示，两岸沟通联系机制停摆，</item>
+        <item>国民党认为民间交流温度仍需持续下去，</item>
+        <item>国民党愿意做推手，</item>
+        <item>让两岸人民实质交流不会中断，</item>
+        <item>希望透过前往大陆参访取得更好的成果。</item>
+        <item>她也强调，</item>
+        <item>这次参访是很好的机会，</item>
+        <item>不管民进党在走"台独"的路，</item>
+        <item>国民党仍然坚定地反"台独"；</item>
+        <item>推动两岸和平不是为了国民党，</item>
+        <item>是为了台湾2300万人民及下一代。</item>
+        <item>洪秀柱一行人于晚间7点40分抵达南京禄口机场。</item>
+        <item>她在致词时特地引用弘一法师的一首诗：</item>
+        <item>"我到为植种，我行花未开，岂无佳色在，留待后人来"，</item>
+        <item>表示此次到大陆来，是为两岸和平而来，</item>
+        <item>很多事情不见得一蹴可及，她现在布下希望的种子，</item>
+        <item>期盼未来开花结果。</item>
+        <item>她指出，台湾政党轮替令人觉得遗憾的是，</item>
+        <item>两岸在过去8年好不容易建立的和平交往局面受到了影响，</item>
+        <item>但国民党对台湾人民要承担责任，两岸的连结绝不能中断，</item>
+        <item>两岸间的交流仍需要持续进行。</item>
+
+    </string-array>
+
+
+
+</resources>
