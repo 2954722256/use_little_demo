@@ -16,26 +16,10 @@ import java.util.List;
 
 public class Main3Activity extends AppCompatActivity {
 
-    ListView mListView1;
-    //    RecyclerView mListView;
-    List<String> mStringArrayList;
-    private CommonAdapter<String> commonAdapter = null;     //
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-
-//        mStringArrayList = Arrays.asList(getResources().getStringArray(R.array.temp));
-//
-//        mListView1 = (ListView) findViewById(R.id.list1);
-//
-//        mListView1.setAdapter(new CommonAdapter<String>(Main3Activity.this, R.layout.item_string, mStringArrayList){
-//            @Override
-//            protected void convert(ViewHolder viewHolder, String item, int i) {
-//                viewHolder.setText(R.id.tv1, item);
-//            }
-//        });
     }
 
 }

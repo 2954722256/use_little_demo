@@ -17,6 +17,7 @@ import com.aohuan.dodo.coordinator.do2.Main2Activity;
 import com.aohuan.dodo.coordinator.do3.Main3Activity;
 import com.aohuan.dodo.coordinator.do4.Main4Activity;
 import com.aohuan.dodo.coordinator.do5.Main5Activity;
+import com.aohuan.dodo.coordinator.do6.Main6Activity;
 import com.aohuan.dodo.coordinator.don0.MainN0Activity;
 import com.aohuan.dodo.coordinator.utils.Utils;
 import com.zhy.adapter.abslistview.CommonAdapter;
@@ -74,11 +75,11 @@ public class MainActivity extends AppCompatActivity {
                 toActivity(Main5Activity.class);
                 break;
             case 6:
+                toActivity(Main6Activity.class);
+                break;
+            case 7:
                 toActivity(Main0Activity.class);
                 break;
-//            case 7:
-//                toActivity(Main0Activity.class);
-//                break;
 //            case 8:
 //                toActivity(Main0Activity.class);
 //                break;
