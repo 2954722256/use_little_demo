@@ -12,11 +12,12 @@
         android:layout_gravity="top|right"
         android:background="#666666">
 
-        <com.aohuan.dodo.coordinator.view.NoScrollListView
-            android:id="@+id/list0"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="top|right" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Display3"
+            android:text="A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"/>
+
     </android.support.v4.widget.NestedScrollView>
 
 
@@ -28,11 +29,12 @@
         android:background="#009900"
         >
 
-        <com.aohuan.dodo.coordinator.view.NoScrollListView
-            android:id="@+id/list1"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="top|center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Display3"
+            android:text="A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"/>
+
     </android.support.v4.widget.NestedScrollView>
 
 
@@ -44,11 +46,12 @@
         android:background="#888888"
         app:layout_behavior="com.aohuan.dodo.coordinator.utils.DodoBehavior1scroll">
 
-        <com.aohuan.dodo.coordinator.view.NoScrollListView
-            android:id="@+id/list2"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="top|left" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Display3"
+            android:text="A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"/>
+
     </android.support.v4.widget.NestedScrollView>
 
 </android.support.design.widget.CoordinatorLayout>
