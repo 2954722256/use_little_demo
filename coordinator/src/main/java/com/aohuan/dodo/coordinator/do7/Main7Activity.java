@@ -1,22 +1,18 @@
-package com.aohuan.dodo.coordinator.don0;
+package com.aohuan.dodo.coordinator.do7;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.aohuan.dodo.coordinator.R;
 
-public class MainN0Activity extends AppCompatActivity {
-
+public class Main7Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_main_n0);
-
+        setContentView(R.layout.activity_main7);
     }
-
 
 }

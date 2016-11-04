@@ -16,32 +16,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Main6Activity extends AppCompatActivity {
-    ListView mListView1;
-    List<String> mStringArrayList;
-    private CommonAdapter<String> commonAdapter = null;     //
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
 
-//        mStringArrayList = Arrays.asList(getResources().getStringArray(R.array.temp));
-//        mListView1 = (ListView) findViewById(R.id.list1);
-//        setDodoAdapter(mListView1);
-
-    }
-
-
-    public void setDodoAdapter(ListView listView){
-        listView.setAdapter(new CommonAdapter<String>(Main6Activity.this, R.layout.item_string, mStringArrayList) {
-            @Override
-            protected void convert(ViewHolder viewHolder, String item, int i) {
-                viewHolder.setText(R.id.tv1, item);
-            }
-        });
     }
 
 }

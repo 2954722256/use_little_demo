@@ -1,7 +1,6 @@
 package com.aohuan.dodo.coordinator;
 
 import android.content.Intent;
-import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -42,7 +41,11 @@ public class MainActivity extends AppCompatActivity {
         commonAdapter = new CommonAdapter<String>(MainActivity.this, R.layout.item_string, mStringArrayList){
             @Override
             protected void convert(ViewHolder viewHolder, String item, int i) {
-                viewHolder.setText(R.id.tv1, item);
+                if(i < PART_2){
+                    viewHolder.setText(R.id.tv1, "【1】 " + item);
+                }else if(i >= PART_2){
+                    viewHolder.setText(R.id.tv1, "【2】 " + item);
+                }
             }
         };
         mListView.setAdapter(commonAdapter);
@@ -54,48 +57,61 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public static final int PART_1 = 0;
+    public static final int PART_2 = 8;
+
     private void doPosition(int i) {
         Log.e("do", "aaa  " + i);
         switch (i){
-            case 0:
+
+            ////===========PART 1
+            case PART_1 + 0:
                 toActivity(Main0Activity.class);
                 break;
-            case 1:
+            case PART_1 +1:
                 toActivity(Main1Activity.class);
                 break;
-            case 2:
+            case PART_1 +2:
                 toActivity(Main2Activity.class);
                 break;
-            case 3:
+            case PART_1 +3:
                 toActivity(Main3Activity.class);
                 break;
-            case 4:
+            case PART_1 +4:
                 toActivity(Main4Activity.class);
                 break;
-            case 5:
+            case PART_1 +5:
                 toActivity(Main5Activity.class);
                 break;
-            case 6:
+            case PART_1 +6:
                 toActivity(Main6Activity.class);
                 break;
-            case 7:
+//            case PART_1 +7:
+//                toActivity(FullscreenActivity.class);
+//                break;
+
+            ////===========PART 2
+
+            case PART_2 + 0:
                 toActivity(MainN0Activity.class);
                 break;
-            case 8:
+            case PART_2 + 1:
                 toActivity(MainN1Activity.class);
                 break;
-//            case 9:
-//                toActivity(Main0Activity);
+
+//            case PART_2 + 3:
+//                toActivity(MainN1Activity.class);
 //                break;
-//            case  10:
-//                toActivity(Main0Activity.class);
+//            case PART_2 + 4:
+//                toActivity(MainN1Activity.class);
 //                break;
-//            case  11:
-//                toActivity(Main0Activity.class);
+//            case PART_2 + 5:
+//                toActivity(MainN1Activity.class);
 //                break;
-//            case  12:
-//                toActivity(Main0Activity.class);
+//            case PART_2 + 6:
+//                toActivity(MainN1Activity.class);
 //                break;
+
 //            case  13:
 ////                toActivity(Main0Activity.class);
 //                break;

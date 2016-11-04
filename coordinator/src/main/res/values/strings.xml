@@ -12,4 +12,10 @@
     <string name="title_activity_main5">Main5Activity</string>
     <string name="title_activity_main6">Main6Activity</string>
     <string name="title_activity_main_n1">MainN1Activity</string>
+    <string name="title_activity_main7">Main7Activity</string>
+    <string name="title_activity_main_n2">MainN2Activity</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

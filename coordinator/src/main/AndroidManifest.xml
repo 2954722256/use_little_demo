@@ -47,6 +47,10 @@
             android:name=".don1.MainN1Activity"
             android:label="@string/title_activity_main_n1" >
         </activity>
+        <!--<activity-->
+            <!--android:name=".do7.Main7Activity"-->
+            <!--android:label="@string/title_activity_main7" >-->
+        <!--</activity>-->
     </application>
 
 </manifest>

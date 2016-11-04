@@ -4,19 +4,25 @@
     <!-- 首页导航的跳转名字 -->
     <string-array name="typelist">
 
-        <item>0 xxxxxxxxxx</item>
+        <item>0 最开始的View</item>
 
-        <item>1 xxxxxxxxxx</item>
+        <item>1 dependOn - Vertical Move</item>
 
-        <item>2 xxxxxxxxxx</item>
+        <item>2 dependOn - Change Size</item>
 
-        <item>3 xxxxxxxxxx</item>
-        <item>4 xxxxxxxxxx</item>
+        <item>3 dependOn - Below</item>
+        <item>4 NestedScrolling - 1 Behavior</item>
 
-        <item>5 xxxxxxxxxx</item>
+        <item>5 NestedScrolling - 2 Behavior</item>
         <item>6 xxxxxxxxxx</item>
         <item>7 xxxxxxxxxx</item>
-        <item>4 xxxxxxxxxx</item>
+
+
+
+        <!-- PART 2 -->
+        <item>0 xxxxxxxxxx</item>
+        <item>1 xxxxxxxxxx</item>
+        <item>2 xxxxxxxxxx</item>
 
 
     </string-array>

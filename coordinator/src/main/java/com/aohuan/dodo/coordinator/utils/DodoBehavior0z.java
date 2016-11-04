@@ -14,7 +14,7 @@ import com.aohuan.dodo.coordinator.view.DodoMoveView;
  * Created by dodo on 2016/10/31.
  * qq: 2390183798
  *
- * 可以跟着Main View 旋转， 对着
+ * 可以跟着Main View 旋转， 对着，    变大
  */
 public class DodoBehavior0z extends CoordinatorLayout.Behavior<Button> {
 
