@@ -17,6 +17,12 @@ import com.aohuan.dodo.coordinator.do3.Main3Activity;
 import com.aohuan.dodo.coordinator.do4.Main4Activity;
 import com.aohuan.dodo.coordinator.do5.Main5Activity;
 import com.aohuan.dodo.coordinator.do6.Main6Activity;
+import com.aohuan.dodo.coordinator.doa0.MainA0Activity;
+import com.aohuan.dodo.coordinator.doa1.MainA1Activity;
+import com.aohuan.dodo.coordinator.doa2.MainA2Activity;
+import com.aohuan.dodo.coordinator.doa3.MainA3Activity;
+import com.aohuan.dodo.coordinator.doa4.MainA4Activity;
+import com.aohuan.dodo.coordinator.doa5.MainA5Activity;
 import com.aohuan.dodo.coordinator.don0.MainN0Activity;
 import com.aohuan.dodo.coordinator.don1.MainN1Activity;
 import com.aohuan.dodo.coordinator.utils.Utils;
@@ -41,10 +47,12 @@ public class MainActivity extends AppCompatActivity {
         commonAdapter = new CommonAdapter<String>(MainActivity.this, R.layout.item_string, mStringArrayList){
             @Override
             protected void convert(ViewHolder viewHolder, String item, int i) {
-                if(i < PART_2){
+                if(i < PART_A){
                     viewHolder.setText(R.id.tv1, "【1】 " + item);
-                }else if(i >= PART_2){
-                    viewHolder.setText(R.id.tv1, "【2】 " + item);
+                }else if(i >= PART_A && i < PART_N){
+                    viewHolder.setText(R.id.tv1, "【A】 " + item);
+                }else if(i >= PART_N){
+                    viewHolder.setText(R.id.tv1, "【N】 " + item);
                 }
             }
         };
@@ -58,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static final int PART_1 = 0;
-    public static final int PART_2 = 8;
+    public static final int PART_A = 8;
+    public static final int PART_N = 14;
 
     private void doPosition(int i) {
         Log.e("do", "aaa  " + i);
@@ -90,12 +99,33 @@ public class MainActivity extends AppCompatActivity {
 //                toActivity(FullscreenActivity.class);
 //                break;
 
-            ////===========PART 2
+            ////===========PART_A
 
-            case PART_2 + 0:
+           case PART_A + 0:
+                toActivity(MainA0Activity.class);
+                break;
+            case PART_A + 1:
+                toActivity(MainA1Activity.class);
+                break;
+            case PART_A + 2:
+                toActivity(MainA2Activity.class);
+                break;
+            case PART_A + 3:
+                toActivity(MainA3Activity.class);
+                break;
+            case PART_A + 4:
+                toActivity(MainA4Activity.class);
+                break;
+            case PART_A + 5:
+                toActivity(MainA5Activity.class);
+                break;
+
+            ////===========PART_N
+
+            case PART_N + 0:
                 toActivity(MainN0Activity.class);
                 break;
-            case PART_2 + 1:
+            case PART_N + 1:
                 toActivity(MainN1Activity.class);
                 break;
 
@@ -116,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 ////                toActivity(Main0Activity.class);
 //                break;
             default:
-                Toast.makeText(this,"default", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"没有设置，嘿嘿！！！", Toast.LENGTH_SHORT).show();
                 break;
 
         }

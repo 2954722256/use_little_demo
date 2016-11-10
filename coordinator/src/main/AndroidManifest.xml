@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aohuan.dodo.coordinator" >
+    package="com.aohuan.dodo.coordinator">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,12 +51,30 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".don1.MainN1Activity"
-            android:label="@string/title_activity_main_n1" >
-        </activity>
-        <!--<activity-->
-            <!--android:name=".do7.Main7Activity"-->
-            <!--android:label="@string/title_activity_main7" >-->
-        <!--</activity>-->
+            android:label="@string/title_activity_main_n1" />
+        <!-- <activity -->
+        <!-- android:name=".do7.Main7Activity" -->
+        <!-- android:label="@string/title_activity_main7" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".doa0.MainA0Activity"
+            android:label="@string/title_activity_main_a0" />
+        <activity
+            android:name=".doa1.MainA1Activity"
+            android:label="@string/title_activity_main_a1" />
+        <activity
+            android:name=".doa2.MainA2Activity"
+            android:label="@string/title_activity_main_a2" />
+        <activity
+            android:name=".doa4.MainA4Activity"
+            android:label="@string/title_activity_main_a4" />
+        <activity
+            android:name=".doa3.MainA3Activity"
+            android:label="@string/title_activity_main_a3" />
+        <activity
+            android:name=".doa5.MainA5Activity"
+            android:label="@string/title_activity_main_a5"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

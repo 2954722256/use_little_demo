@@ -1,7 +1,7 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Base application theme. Theme.AppCompat.Light.DarkActionBar    -->
+    <style name="AppTheme" parent="AppTheme.NoActionBar">
         <!-- Customize your theme here. -->
     </style>
 
@@ -10,10 +10,36 @@
         <attr name="target" format="reference" />
     </declare-styleable>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+
+        <!-- customize the color palette -->
+        <!-- 导航栏 #4876FF    @color/material_2    -->
+        <item name="colorPrimary">#4876FF</item>
+
+        <!-- 任务栏 #3A5FCD    @color/material_3    -->
+        <item name="colorPrimaryDark">#3A5FCD</item>
+
+        <!-- 窗口的背景颜色    @android:color/white    @color/material_1  -->
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <item name="colorAccent">@color/material_1</item>
+
+        <!-- 导航栏文字颜色    @android:color/black    @color/material_1  -->
+        <item name="android:textColorPrimary">@android:color/black</item>
+
+        <!--<item name="android:navigationBarColor">@color/material_1</item>-->
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar" parent="AppBaseTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
 

@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+//    compileSdkVersion 23
+    compileSdkVersion 25
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.aohuan.demo.use_little_demo"
+        applicationId "com.aohuan.dodo.coordinator"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
@@ -20,7 +21,13 @@ android {
 }
 
 dependencies {
+    final SUPPORT_LIBRARY_VERSION = '25.0.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    compile "com.zhy:base-adapter:3.0.3"
+    compile "com.zhy:base-rvadapter:3.0.3"
+    compile "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
 }

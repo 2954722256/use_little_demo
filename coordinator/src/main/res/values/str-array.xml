@@ -11,16 +11,23 @@
         <item>2 dependOn - Change Size</item>
 
         <item>3 dependOn - Below</item>
-        <item>4 NestedScrolling - 1 Behavior</item>
+        <item>4 NestedScrolling - 1 Behavior </item>
 
-        <item>5 NestedScrolling - 2 Behavior</item>
-        <item>6 xxxxxxxxxx</item>
+        <item>5 NestedScrolling - 2 Behavior </item>
+        <item>6 NestedScrolling - 3 BindView </item>
         <item>7 xxxxxxxxxx</item>
 
 
+        <!-- PART A -->
+        <item>0 AppBarLayout  Toolbar</item>
+        <item>1 AppBarLayout  Toolbar Menu </item>
+        <item>2 AppBarLayout  Toolbar scrollFlags</item>
+        <item>3 新建Activity（Tabbed） 添加 TabLayout</item>
+        <item>4 新建Activity（Scrolling）CollapsingToolbarLayout中添加Image</item>
+        <item>5 新建Activity（NavigationDrawer）include中添加NestedScrollView</item>
 
-        <!-- PART 2 -->
-        <item>0 xxxxxxxxxx</item>
+        <!-- PART N -->
+        <item>0 AppBarLayout  CollapsingToolbarLayout</item>
         <item>1 xxxxxxxxxx</item>
         <item>2 xxxxxxxxxx</item>
 

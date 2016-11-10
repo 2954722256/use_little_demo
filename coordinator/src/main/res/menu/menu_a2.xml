@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/scroll"
+        android:title="scroll"
+        android:orderInCategory="100"
+        app:showAsAction="withText|ifRoom" />
+    <item
+        android:id="@+id/snap"
+        android:title="snap"
+        android:orderInCategory="100"
+        app:showAsAction="withText|never" />
+    <item
+        android:id="@+id/enterAlways"
+        android:title="enterAlways"
+        android:orderInCategory="100"
+        app:showAsAction="withText|never" />
+    <item
+        android:id="@+id/enterAlwaysCollapsed"
+        android:title="enterAlwaysCollapsed"
+        android:orderInCategory="100"
+        app:showAsAction="withText|never" />
+    <item
+        android:id="@+id/exitUntilCollapsed"
+        android:title="exitUntilCollapsed"
+        android:orderInCategory="100"
+        app:showAsAction="withText|never" />
+
+
+</menu>
