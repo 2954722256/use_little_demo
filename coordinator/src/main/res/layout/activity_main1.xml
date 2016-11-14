@@ -11,11 +11,11 @@
         android:background="#888888"
         android:text="  Dodo Follow  "
         android:layout_gravity="top|left"
-        app:layout_behavior="com.aohuan.dodo.coordinator.utils.DodoBehavior0s"
+        app:layout_behavior="com.aohuan.dodo.coordinator.do_.utils.behavior.DodoBehavior0s"
         />
 
     <!--android:layout_gravity="top|right"-->
-    <com.aohuan.dodo.coordinator.view.DodoMoveView
+    <com.aohuan.dodo.coordinator.do_.utils.view.DodoMoveView
         android:text="Main"
         android:gravity="center"
         android:layout_gravity="top|right"

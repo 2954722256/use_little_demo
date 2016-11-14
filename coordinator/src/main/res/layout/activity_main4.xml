@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!--app:layout_behavior="com.aohuan.dodo.coordinator.utils.DodoBehavior1scroll"-->
+        <!--app:layout_behavior="com.aohuan.dodo.coordinator.do_.utils.behavior.DodoBehavior1scroll"-->
         <android.support.v4.widget.NestedScrollView
             android:id="@+id/ns0"
             android:layout_width="150dp"
@@ -16,7 +16,7 @@
             android:layout_gravity="top|right"
             android:background="#666666">
 
-            <!--<com.aohuan.dodo.coordinator.view.NoScrollListView-->
+            <!--<NoScrollListView-->
                 <!--android:id="@+id/list0"-->
                 <!--android:layout_width="150dp"-->
                 <!--android:layout_height="match_parent"-->
@@ -35,9 +35,9 @@
             android:layout_height="match_parent"
             android:layout_gravity="top|left"
             android:background="#888888"
-            app:layout_behavior="com.aohuan.dodo.coordinator.utils.DodoBehavior1scroll">
+            app:layout_behavior="com.aohuan.dodo.coordinator.do_.utils.behavior.DodoBehavior1scroll">
 
-            <!--<com.aohuan.dodo.coordinator.view.NoScrollListView-->
+            <!--<NoScrollListView-->
                 <!--android:id="@+id/list1"-->
                 <!--android:layout_width="150dp"-->
                 <!--android:layout_height="match_parent"-->

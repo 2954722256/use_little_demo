@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.aohuan.dodo.coordinator.doa3.MainA3Activity">
+    tools:context=".doa.doa3.MainA3Activity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"

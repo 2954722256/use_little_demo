@@ -6,7 +6,7 @@
 
     <!--android:layout_gravity="top|right"-->
 
-    <com.aohuan.dodo.coordinator.view.DodoMoveView
+    <com.aohuan.dodo.coordinator.do_.utils.view.DodoMoveView
         android:layout_gravity="top"
         android:layout_width="150dp"
         android:layout_height="100dp"

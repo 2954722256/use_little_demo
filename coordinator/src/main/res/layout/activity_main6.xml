@@ -29,7 +29,7 @@
         android:background="#888888"
         android:layout_gravity="bottom|center_horizontal"
         android:text="  Dodo Follow  "
-        app:layout_behavior="com.aohuan.dodo.coordinator.utils.DodoMoveBigerBehavior"
+        app:layout_behavior="com.aohuan.dodo.coordinator.do_.utils.behavior.DodoMoveBigerBehavior"
         />
 
 

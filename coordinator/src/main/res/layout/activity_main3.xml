@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.aohuan.dodo.coordinator.view.DodoMoveView
+        <com.aohuan.dodo.coordinator.do_.utils.view.DodoMoveView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="top|right"
@@ -23,7 +23,7 @@
             android:layout_height="100dp"
             android:background="#888888"
             android:text="  Dodo Below  "
-            app:layout_behavior="com.aohuan.dodo.coordinator.utils.DodoBelowBehavior" />
+            app:layout_behavior="com.aohuan.dodo.coordinator.do_.utils.behavior.DodoBelowBehavior" />
 
     </android.support.design.widget.CoordinatorLayout>
 

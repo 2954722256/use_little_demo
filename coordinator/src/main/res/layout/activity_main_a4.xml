@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.aohuan.dodo.coordinator.doa4.MainA4Activity">
+    tools:context=".doa.doa4.MainA4Activity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"

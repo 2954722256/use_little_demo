@@ -4,6 +4,8 @@
     <!-- 首页导航的跳转名字 -->
     <string-array name="typelist">
 
+
+        <!-- PART 0 -->
         <item>0 最开始的View</item>
 
         <item>1 dependOn - Vertical Move</item>
@@ -32,6 +34,15 @@
         <item>2 xxxxxxxxxx</item>
 
 
+    </string-array>
+
+    <!-- 一级菜单 -->
+    <string-array name="typetop">
+        <!-- PART N -->
+        <item>PART 0</item>
+        <item>PART A</item>
+        <item>PART xx</item>
+        <!--<item>PART xx</item>-->
     </string-array>
 
 

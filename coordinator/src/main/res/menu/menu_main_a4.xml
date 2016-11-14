@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.aohuan.dodo.coordinator.doa4.MainA4Activity">
+    tools:context=".doa.doa4.MainA4Activity">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

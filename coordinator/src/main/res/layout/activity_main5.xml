@@ -27,7 +27,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="top|center_horizontal"
         android:background="#009900"
-        app:layout_behavior="com.aohuan.dodo.coordinator.utils.DodoBehavior1scroll">
+        app:layout_behavior="com.aohuan.dodo.coordinator.do_.utils.behavior.DodoBehavior1scroll">
 
         <TextView
             android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="top|left"
         android:background="#888888"
-        app:layout_behavior="com.aohuan.dodo.coordinator.utils.DodoBehavior1scroll">
+        app:layout_behavior="com.aohuan.dodo.coordinator.do_.utils.behavior.DodoBehavior1scroll">
 
         <TextView
             android:layout_width="match_parent"

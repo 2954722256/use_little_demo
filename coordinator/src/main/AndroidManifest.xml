@@ -23,58 +23,66 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".do1.Main1Activity"
+            android:name=".do_.do1.Main1Activity"
             android:label="@string/title_activity_main1" />
         <activity
-            android:name=".do2.Main2Activity"
+            android:name=".do_.do2.Main2Activity"
             android:label="@string/title_activity_main2" />
         <activity
-            android:name=".do0.Main0Activity"
+            android:name=".do_.do0.Main0Activity"
             android:label="@string/title_activity_main0" />
         <activity
-            android:name=".don0.MainN0Activity"
+            android:name=".don.don0.MainN0Activity"
             android:label="@string/title_activity_main_n0" />
         <activity
-            android:name=".do3.Main3Activity"
+            android:name=".do_.do3.Main3Activity"
             android:label="@string/title_activity_main3" />
         <activity
-            android:name=".do4.Main4Activity"
+            android:name=".do_.do4.Main4Activity"
             android:label="@string/title_activity_main4"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".do5.Main5Activity"
+            android:name=".do_.do5.Main5Activity"
             android:label="@string/title_activity_main5"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".do6.Main6Activity"
+            android:name=".do_.do6.Main6Activity"
             android:label="@string/title_activity_main6"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".don1.MainN1Activity"
+            android:name=".don.don1.MainN1Activity"
             android:label="@string/title_activity_main_n1" />
         <!-- <activity -->
         <!-- android:name=".do7.Main7Activity" -->
         <!-- android:label="@string/title_activity_main7" > -->
         <!-- </activity> -->
         <activity
-            android:name=".doa0.MainA0Activity"
+            android:name=".doa.doa0.MainA0Activity"
             android:label="@string/title_activity_main_a0" />
         <activity
-            android:name=".doa1.MainA1Activity"
+            android:name=".doa.doa1.MainA1Activity"
             android:label="@string/title_activity_main_a1" />
         <activity
-            android:name=".doa2.MainA2Activity"
+            android:name=".doa.doa2.MainA2Activity"
             android:label="@string/title_activity_main_a2" />
         <activity
-            android:name=".doa4.MainA4Activity"
+            android:name=".doa.doa4.MainA4Activity"
             android:label="@string/title_activity_main_a4" />
         <activity
-            android:name=".doa3.MainA3Activity"
+            android:name=".doa.doa3.MainA3Activity"
             android:label="@string/title_activity_main_a3" />
         <activity
-            android:name=".doa5.MainA5Activity"
+            android:name=".doa.doa5.MainA5Activity"
             android:label="@string/title_activity_main_a5"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".don.don3.MainN3Activity"
+            android:label="@string/title_activity_main_n3"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".don.don2.MainN2Activity"
+            android:label="@string/title_activity_main_n2"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
