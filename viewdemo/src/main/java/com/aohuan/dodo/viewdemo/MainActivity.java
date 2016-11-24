@@ -13,8 +13,9 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.aohuan.dodo.viewdemo.listabout.listview.MainHyMutilListActivity;
-import com.aohuan.dodo.viewdemo.listabout.rv.MainHyMutilRvActivity;
+import com.aohuan.dodo.viewdemo.listabout.listview.hy.LvHyMutiActivity;
+import com.aohuan.dodo.viewdemo.listabout.rv.hy.RvHyMutiActivity;
+import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO1Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -77,10 +78,13 @@ public class MainActivity extends AppCompatActivity {
         switch (i){
             ////===========PART 1
             case PART_1 + 0:
-                return setBeanName(name, MainHyMutilListActivity.class);
+                return setBeanName(name, LvHyMutiActivity.class);
 
             case PART_1 + 1:
-                return setBeanName(name, MainHyMutilRvActivity.class);
+                return setBeanName(name, RvHyMutiActivity.class);
+
+            case PART_1 + 2:
+            return setBeanName(name, RvO1Activity.class);
 
         }
         return new ChildBean();

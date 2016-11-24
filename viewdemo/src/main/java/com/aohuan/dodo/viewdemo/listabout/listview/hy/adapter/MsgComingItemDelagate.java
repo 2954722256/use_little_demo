@@ -1,8 +1,8 @@
-package com.aohuan.dodo.viewdemo.listabout.listview.adapter;
+package com.aohuan.dodo.viewdemo.listabout.listview.hy.adapter;
 
 
 import com.aohuan.dodo.viewdemo.R;
-import com.aohuan.dodo.viewdemo.listabout.listview.bean.ChatMessage;
+import com.aohuan.dodo.viewdemo.listabout.listview.hy.bean.ChatMessage;
 import com.zhy.adapter.abslistview.ViewHolder;
 import com.zhy.adapter.abslistview.base.ItemViewDelegate;
 

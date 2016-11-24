@@ -1,4 +1,4 @@
-package com.aohuan.dodo.viewdemo.listabout.rv;
+package com.aohuan.dodo.viewdemo.listabout.rv.hy;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,15 +10,15 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.aohuan.dodo.viewdemo.R;
-import com.aohuan.dodo.viewdemo.listabout.listview.bean.ChatMessage;
-import com.aohuan.dodo.viewdemo.listabout.rv.adapter.ChatAdapterForRv;
+import com.aohuan.dodo.viewdemo.listabout.listview.hy.bean.ChatMessage;
+import com.aohuan.dodo.viewdemo.listabout.rv.hy.adapter.ChatAdapterForRv;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.wrapper.LoadMoreWrapper;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainHyMutilRvActivity extends AppCompatActivity {
+public class RvHyMutiActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
 
     private LoadMoreWrapper mLoadMoreWrapper;
@@ -28,7 +28,7 @@ public class MainHyMutilRvActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_hy_mutil_rv);
+        setContentView(R.layout.activity_rv_hy_mutil);
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
@@ -61,12 +61,12 @@ public class MainHyMutilRvActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new CommonAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
-                Toast.makeText(MainHyMutilRvActivity.this, "Click:" + position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RvHyMutiActivity.this, "Click:" + position, Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public boolean onItemLongClick(View view, RecyclerView.ViewHolder holder, int position) {
-                Toast.makeText(MainHyMutilRvActivity.this, "LongClick:" + position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RvHyMutiActivity.this, "LongClick:" + position, Toast.LENGTH_SHORT).show();
                 return false;
             }
         });

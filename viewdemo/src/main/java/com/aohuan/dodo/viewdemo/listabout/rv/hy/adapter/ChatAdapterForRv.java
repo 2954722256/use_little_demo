@@ -1,8 +1,8 @@
-package com.aohuan.dodo.viewdemo.listabout.rv.adapter;
+package com.aohuan.dodo.viewdemo.listabout.rv.hy.adapter;
 
 import android.content.Context;
 
-import com.aohuan.dodo.viewdemo.listabout.listview.bean.ChatMessage;
+import com.aohuan.dodo.viewdemo.listabout.listview.hy.bean.ChatMessage;
 import com.zhy.adapter.recyclerview.MultiItemTypeAdapter;
 
 import java.util.List;
