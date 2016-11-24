@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.aohuan.dodo.coordinator.dob.utils.view.NestDodoSParent1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/np1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009966">
+
+    <com.aohuan.dodo.coordinator.dob.utils.view.NestDodoSChild1 xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ns1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Display3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="128dp"
+                android:background="@android:color/holo_red_light"
+                android:text="A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ" />
+        </LinearLayout>
+
+    </com.aohuan.dodo.coordinator.dob.utils.view.NestDodoSChild1>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="150dp"
+        android:layout_margin="50dp"
+
+        android:text="dodoButton"/>
+
+
+</com.aohuan.dodo.coordinator.dob.utils.view.NestDodoSParent1>

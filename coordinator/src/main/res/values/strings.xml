@@ -133,4 +133,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_main_n3">MainN3Activity</string>
+    <string name="title_activity_main_b0">MainB0Activity</string>
+    <string name="title_activity_main_b1">MainB1Activity</string>
+    <string name="title_activity_main_b2">MainB2Activity</string>
 </resources>

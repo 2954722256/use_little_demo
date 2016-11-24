@@ -9,6 +9,7 @@ import android.view.ViewConfiguration;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.OverScroller;
+import android.widget.ScrollView;
 
 /**
  * Created by Administrator on 2016/10/24.
@@ -18,6 +19,9 @@ import android.widget.OverScroller;
  */
 public class StickNavDodoView extends LinearLayout {
 
+    ScrollView sv;
+    OverScroller os;
+    View v;
 
     Context context;
 

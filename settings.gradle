@@ -1,1 +1,1 @@
-include ':app', ':eventbus3test', ':annotation_test', ':bottomnavigation', ':stickynav', ':coordinator'
+include ':app', ':eventbus3test', ':annotation_test', ':bottomnavigation', ':stickynav', ':coordinator', ':svg', ':viewabout', ':javacode'

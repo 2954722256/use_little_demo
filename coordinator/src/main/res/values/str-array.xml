@@ -28,6 +28,14 @@
         <item>4 新建Activity（Scrolling）CollapsingToolbarLayout中添加Image</item>
         <item>5 新建Activity（NavigationDrawer）include中添加NestedScrollView</item>
 
+        <!-- PART B -->
+        <item>0 BBB</item>
+        <item>1 BBB</item>
+        <item>2 BBB</item>
+        <item>3 BBB</item>
+        <item>4 BBB</item>
+
+
         <!-- PART N -->
         <item>0 AppBarLayout  CollapsingToolbarLayout</item>
         <item>1 xxxxxxxxxx</item>
@@ -41,6 +49,7 @@
         <!-- PART N -->
         <item>PART 0</item>
         <item>PART A</item>
+        <item>PART B</item>
         <item>PART xx</item>
         <!--<item>PART xx</item>-->
     </string-array>

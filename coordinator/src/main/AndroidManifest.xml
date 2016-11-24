@@ -83,6 +83,17 @@
             android:name=".don.don2.MainN2Activity"
             android:label="@string/title_activity_main_n2"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dob.MainB0Activity"
+            android:label="@string/title_activity_main_b0" />
+        <activity
+            android:name=".dob.MainB1Activity"
+            android:label="@string/title_activity_main_b1"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dob.MainB2Activity"
+            android:label="@string/title_activity_main_b2"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

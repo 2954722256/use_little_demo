@@ -30,6 +30,9 @@ import com.aohuan.dodo.coordinator.doa.doa2.MainA2Activity;
 import com.aohuan.dodo.coordinator.doa.doa3.MainA3Activity;
 import com.aohuan.dodo.coordinator.doa.doa4.MainA4Activity;
 import com.aohuan.dodo.coordinator.doa.doa5.MainA5Activity;
+import com.aohuan.dodo.coordinator.dob.MainB0Activity;
+import com.aohuan.dodo.coordinator.dob.MainB1Activity;
+import com.aohuan.dodo.coordinator.dob.MainB2Activity;
 import com.aohuan.dodo.coordinator.don.don0.MainN0Activity;
 import com.aohuan.dodo.coordinator.don.don1.MainN1Activity;
 import com.aohuan.dodo.coordinator.do_.utils.Utils;
@@ -73,16 +76,19 @@ public class MainActivity extends AppCompatActivity {
             ChildBean bean = setIndexBean(i, mStringArrayList.get(i));
             if(i < PART_A){
                 typeChildList.get(0).childBeanList.add(bean);
-            }else if(i >= PART_A && i < PART_N){
+            }else if(i >= PART_A && i < PART_B){
                 typeChildList.get(1).childBeanList.add(bean);
-            }else if(i >= PART_N){
+            }else if(i >= PART_B && i < PART_N){
                 typeChildList.get(2).childBeanList.add(bean);
+            }else if(i >= PART_N){
+                typeChildList.get(3).childBeanList.add(bean);
             }
         }
     }
     public static final int PART_1 = 0;
     public static final int PART_A = 8;
-    public static final int PART_N = 14;
+    public static final int PART_B = PART_A + 6;
+    public static final int PART_N = PART_B + 5;
 
 
     private ChildBean setIndexBean(int i, String name) {
@@ -122,6 +128,14 @@ public class MainActivity extends AppCompatActivity {
                 return setBeanName(name, MainA4Activity.class);
             case PART_A + 5:
                 return setBeanName(name, MainA5Activity.class);
+
+            ////===========PART_B
+            case PART_B + 0:
+                return setBeanName(name, MainB0Activity.class);
+            case PART_B + 1:
+                return setBeanName(name, MainB1Activity.class);
+            case PART_B + 2:
+                return setBeanName(name, MainB2Activity.class);
 
             ////===========PART_N
 
@@ -219,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
                         if(cls == null){
                             Toast.makeText(getApplicationContext(),"没有设置，嘿嘿！！！", Toast.LENGTH_SHORT).show();
                         }else {
-                           startActivity(new Intent(getApplication(), ((ChildBean) obj).cls));
+                            startActivity(new Intent(getApplication(), ((ChildBean) obj).cls));
                         }
 
                     }

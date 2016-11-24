@@ -20,8 +20,10 @@ android {
 }
 
 dependencies {
+    final SUPPORT_LIBRARY_VERSION = '24.2.1'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION'
     compile 'com.zhy:base-adapter:3.0.3'
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
 }
