@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.aohuan.dodo.viewdemo.R;
 import com.aohuan.dodo.viewdemo.listabout.listview.bean.ChatMessage;
+import com.aohuan.dodo.viewdemo.listabout.rv.adapter.ChatAdapterForRv;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.wrapper.LoadMoreWrapper;
 

@@ -1,4 +1,4 @@
-package com.aohuan.dodo.viewdemo.listabout.rv;
+package com.aohuan.dodo.viewdemo.listabout.rv.adapter;
 
 import android.content.Context;
 
