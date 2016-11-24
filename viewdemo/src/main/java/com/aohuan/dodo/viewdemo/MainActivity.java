@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aohuan.dodo.viewdemo.listabout.listview.MainHyMutilListActivity;
+import com.aohuan.dodo.viewdemo.listabout.rv.MainHyMutilRvActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -77,6 +78,9 @@ public class MainActivity extends AppCompatActivity {
             ////===========PART 1
             case PART_1 + 0:
                 return setBeanName(name, MainHyMutilListActivity.class);
+
+            case PART_1 + 1:
+                return setBeanName(name, MainHyMutilRvActivity.class);
 
         }
         return new ChildBean();

@@ -1,12 +1,13 @@
-package com.aohuan.dodo.viewdemo.listabout.listview.adapter;
+package com.aohuan.dodo.viewdemo.listabout.rv;
 
 import com.aohuan.dodo.viewdemo.R;
 import com.aohuan.dodo.viewdemo.listabout.listview.bean.ChatMessage;
-import com.zhy.adapter.abslistview.ViewHolder;
-import com.zhy.adapter.abslistview.base.ItemViewDelegate;
+import com.zhy.adapter.recyclerview.base.ItemViewDelegate;
+import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 /**
- * Created by zhy on 16/6/22.
+ * Created by dodo_lihao on 2016/11/24.
+ * qq: 2390183798
  */
 public class MsgSendItemDelagate implements ItemViewDelegate<ChatMessage>
 {
@@ -21,7 +22,6 @@ public class MsgSendItemDelagate implements ItemViewDelegate<ChatMessage>
     public boolean isForViewType(ChatMessage item, int position)
     {
         return !item.isComMeg();
-//        return true;
     }
 
     @Override
