@@ -28,6 +28,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="jsoup-1.10.1" level="project" />
-    <orderEntry type="library" exported="" name="javacode.javacode" level="project" />
   </component>
 </module>

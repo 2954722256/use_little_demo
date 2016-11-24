@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ViewDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_hy_list">MainHyListActivity</string>
+</resources>

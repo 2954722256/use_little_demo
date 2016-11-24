@@ -11,7 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/stickynav/stickynav.iml" filepath="$PROJECT_DIR$/stickynav/stickynav.iml" />
       <module fileurl="file://$PROJECT_DIR$/svg/svg.iml" filepath="$PROJECT_DIR$/svg/svg.iml" />
       <module fileurl="file://$PROJECT_DIR$/use_little_demo.iml" filepath="$PROJECT_DIR$/use_little_demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/viewabout/viewabout.iml" filepath="$PROJECT_DIR$/viewabout/viewabout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewdemo/viewdemo.iml" filepath="$PROJECT_DIR$/viewdemo/viewdemo.iml" />
     </modules>
   </component>
 </project>
