@@ -1,7 +1,7 @@
 package com.aohuan.dodo.javacode.reflect.sample1;
 
 import com.aohuan.dodo.javacode.reflect.utils.DUtils;
-import com.aohuan.dodo.javacode.reflect.utils.DummyClass;
+import com.aohuan.dodo.javacode.reflect.bean.DummyClass;
 
 /**
  * Created by dodo_lihao on 2016/11/27.
@@ -43,7 +43,7 @@ public class DoClass {
      */
     private void doClass3(){
         try {
-            Class<?> c3 = Class.forName("com.aohuan.dodo.javacode.reflect.utils.DummyClass");
+            Class<?> c3 = Class.forName("com.aohuan.dodo.javacode.reflect.bean.DummyClass");
             DUtils.println(c3.toString());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -74,7 +74,7 @@ public class DoClass {
      */
     private void doClassSimpleName3(){
         try {
-            Class<?> c3 = Class.forName("com.aohuan.dodo.javacode.reflect.utils.DummyClass");
+            Class<?> c3 = Class.forName("com.aohuan.dodo.javacode.reflect.bean.DummyClass");
             DUtils.println(c3.getSimpleName());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

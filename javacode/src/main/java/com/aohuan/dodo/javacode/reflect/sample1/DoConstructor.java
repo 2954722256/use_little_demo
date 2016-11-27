@@ -1,8 +1,8 @@
 package com.aohuan.dodo.javacode.reflect.sample1;
 
 import com.aohuan.dodo.javacode.reflect.utils.DUtils;
-import com.aohuan.dodo.javacode.reflect.utils.DummyClass;
-import com.aohuan.dodo.javacode.reflect.utils.DummyClass2;
+import com.aohuan.dodo.javacode.reflect.bean.DummyClass;
+import com.aohuan.dodo.javacode.reflect.bean.DummyClass2;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -14,15 +14,15 @@ import java.lang.reflect.InvocationTargetException;
 public class DoConstructor {
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
-        DoConstructor doClass = new DoConstructor();
-//        doClass.getAndPrintConstructors(DummyClass.class);
-//        doClass.getAndPrintConstructors(DummyClass2.class);
+        DoConstructor doConstructor = new DoConstructor();
+//        doConstructor.getAndPrintConstructors(DummyClass.class);
+//        doConstructor.getAndPrintConstructors(DummyClass2.class);
 
 
-//        doClass.doConstructorNewInstance1();
-//        doClass.doConstructorNewInstance2E();
-//        doClass.doConstructorNewInstance2R1();
-        doClass.doConstructorNewInstance2R2();
+//        doConstructor.doConstructorNewInstance1();
+//        doConstructor.doConstructorNewInstance2E();
+//        doConstructor.doConstructorNewInstance2R1();
+        doConstructor.doConstructorNewInstance2R2();
 
     }
 

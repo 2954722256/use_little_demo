@@ -1,22 +1,13 @@
-package com.aohuan.dodo.javacode.reflect.utils;
+package com.aohuan.dodo.javacode.reflect.bean;
 
 /**
  * Created by dodo_lihao on 2016/11/27.
  * qq: 2390183798
  */
-public class DummyClass2 {
+public class DummyClass {
 
-    String name;
-    int age;
-
-    public DummyClass2(String name) {
-        this.name = name;
-    }
-
-    public DummyClass2(String name, int age) {
-        this.age = age;
-        this.name = name;
-    }
+    public String name;
+    private int age;
 
     public int getAge() {
         return age;
