@@ -22,16 +22,25 @@ public class DoClass {
         doClass.doNewInstance1();
     }
 
+    /**
+     * 第1种方式，得到Class对象
+     */
     private void doClass1() {
         Class<?> c1 = new DummyClass().getClass();
         DUtils.println(c1.toString());
     }
 
+    /**
+     * 第2种方式，得到Class对象
+     */
     private void doClass2(){
         Class<?> c2 = DummyClass.class;
         DUtils.println(c2.toString());
     }
 
+    /**
+     * 第3种方式，得到Class对象
+     */
     private void doClass3(){
         try {
             Class<?> c3 = Class.forName("com.aohuan.dodo.javacode.reflect.utils.DummyClass");
@@ -41,16 +50,28 @@ public class DoClass {
         }
     }
 
+    /**
+     * 第1种方式，得到Class对象
+     * class对象获得Class的Name
+     */
     private void doClassName1(){
         Class<?> c1 = new DummyClass().getClass();
         DUtils.println(c1.getName());
     }
 
+    /**
+     * 第2种方式，得到Class对象
+     * class对象获得Class的Name
+     */
     private void doClassName2(){
         Class<?> c2 = DummyClass.class;
         DUtils.println(c2.getName());
     }
 
+    /**
+     * 第3种方式，得到Class对象
+     * class对象获得Class的SimpleName
+     */
     private void doClassSimpleName3(){
         try {
             Class<?> c3 = Class.forName("com.aohuan.dodo.javacode.reflect.utils.DummyClass");
@@ -60,7 +81,10 @@ public class DoClass {
         }
     }
 
-
+    /**
+     * 第3种方式，得到Class对象
+     * class对象的newInstance，来实例化对象
+     */
     private void doNewInstance1(){
         try {
             DummyClass bean11 = new DummyClass().getClass().newInstance();
