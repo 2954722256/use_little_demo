@@ -10,6 +10,8 @@ import java.io.IOException;
 /**
  * Created by dodo_lihao on 2016/11/24.
  * qq: 2390183798
+ *
+ * 简单爬取测试
  */
 public class DoSth1 {
 
@@ -24,7 +26,6 @@ public class DoSth1 {
 //        test1Body();
 //        test2ConnectBody();
         test3Article();
-
     }
 
 

@@ -24,18 +24,18 @@ public class MainA2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main_a2);
         tv = (TextView) findViewById(R.id.tv1);
         abl = (AppBarLayout) findViewById(R.id.abl);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                finish();
-                Toast.makeText(getApplication(), "NavigationOnClickListener", Toast.LENGTH_SHORT).show();
-                isTvGone = !isTvGone;
-                tv.setVisibility(isTvGone?View.GONE:View.VISIBLE);
-            }
-        });
+//        toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                finish();
+//                Toast.makeText(getApplication(), "NavigationOnClickListener", Toast.LENGTH_SHORT).show();
+//                isTvGone = !isTvGone;
+//                tv.setVisibility(isTvGone?View.GONE:View.VISIBLE);
+//            }
+//        });
         setTextBoolean();
     }
 

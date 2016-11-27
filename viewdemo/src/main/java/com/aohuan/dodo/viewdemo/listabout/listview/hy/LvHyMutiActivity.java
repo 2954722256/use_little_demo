@@ -21,6 +21,7 @@ public class LvHyMutiActivity extends AppCompatActivity {
         mListView = (ListView) findViewById(R.id.id_listview_list);
         mListView.setDivider(null);
         mListView.setAdapter(new ChatAdapter(this, ChatMessage.MOCK_DATAS));
+//        new CommonAdapter<>()
     }
 
 }

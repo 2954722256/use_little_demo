@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:overScrollMode="always"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:overScrollMode="always">
+
     <android.support.design.widget.AppBarLayout
         android:id="@+id/abl"
         android:layout_width="match_parent"
@@ -13,23 +14,35 @@
 
         <!-- dodo提示， 这里如果有 app:navigationIcon 就以它为主， 没有，就以android:navigationIcon 为主 -->
 
-        <android.support.v7.widget.Toolbar
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:minHeight="60dp"-->
+        <!--android:navigationIcon="@drawable/ic_menu_back"-->
+        <!--app:contentScrim="?attr/colorPrimary"-->
+        <!--app:layout_scrollFlags="scroll"-->
+        <!--app:subtitle="Sub Title" />-->
+
+        <ViewGroup
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="400dp"
             android:background="?attr/colorPrimary"
             android:minHeight="60dp"
-            app:contentScrim="?attr/colorPrimary"
             android:navigationIcon="@drawable/ic_menu_back"
-            app:subtitle="Sub Title"
-            app:layout_scrollFlags="scroll"/>
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll"
+            app:subtitle="Sub Title" />
+
 
         <TextView
             android:id="@+id/tv1"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:background="@color/material_1"
-            android:text="pending"/>
+            android:text="pending" />
 
     </android.support.design.widget.AppBarLayout>
 
