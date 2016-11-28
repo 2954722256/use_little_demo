@@ -87,7 +87,7 @@ public class DoMethod {
     }
 
 
-    private void getDe
+//    private void getDe
 
 
 }

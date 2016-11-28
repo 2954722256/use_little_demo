@@ -27,11 +27,13 @@
             android:label="@string/title_activity_main_hy_list" />
         <activity
             android:name=".listabout.rv.hy.RvHyMutiActivity"
-            android:label="@string/title_activity_main_hy_mutil_rv"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/title_activity_main_hy_mutil_rv" />
         <activity
             android:name=".listabout.rv.other.RvO1Activity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_o1" />
+        <activity android:name=".listabout.rv.bili.RvB1Activity" />
+
+        <activity android:name=".listabout.rv.other.RvO2Activity" android:theme="@style/AppTheme2"/>
     </application>
 
 </manifest>

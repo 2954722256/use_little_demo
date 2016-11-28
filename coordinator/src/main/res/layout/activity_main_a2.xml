@@ -14,27 +14,27 @@
 
         <!-- dodo提示， 这里如果有 app:navigationIcon 就以它为主， 没有，就以android:navigationIcon 为主 -->
 
-        <!--<android.support.v7.widget.Toolbar-->
+        <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="60dp"
+        android:navigationIcon="@drawable/ic_menu_back"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll"
+        app:subtitle="Sub Title" />
+
+        <!--<ViewGroup-->
         <!--android:id="@+id/toolbar"-->
         <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="200dp"-->
+        <!--android:layout_height="400dp"-->
         <!--android:background="?attr/colorPrimary"-->
         <!--android:minHeight="60dp"-->
         <!--android:navigationIcon="@drawable/ic_menu_back"-->
         <!--app:contentScrim="?attr/colorPrimary"-->
         <!--app:layout_scrollFlags="scroll"-->
         <!--app:subtitle="Sub Title" />-->
-
-        <ViewGroup
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:background="?attr/colorPrimary"
-            android:minHeight="60dp"
-            android:navigationIcon="@drawable/ic_menu_back"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll"
-            app:subtitle="Sub Title" />
 
 
         <TextView

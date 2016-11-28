@@ -14,8 +14,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aohuan.dodo.viewdemo.listabout.listview.hy.LvHyMutiActivity;
+import com.aohuan.dodo.viewdemo.listabout.rv.bili.RvB1Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.hy.RvHyMutiActivity;
 import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO1Activity;
+import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO2Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -49,25 +51,26 @@ public class MainActivity extends AppCompatActivity {
 
     private void setBean() {
         //添加top
-        for(int i=0; i<mStringTopList.size(); i++){
+        for (int i = 0; i < mStringTopList.size(); i++) {
             typeChildList.add(new TypeBean(mStringTopList.get(i)));
         }
 
-        for(int i=0; i<mStringArrayList.size(); i++){
+        for (int i = 0; i < mStringArrayList.size(); i++) {
             ChildBean bean = setIndexBean(i, mStringArrayList.get(i));
-            if(i < PART_A){
+            if (i < PART_A) {
                 typeChildList.get(0).childBeanList.add(bean);
-            }else if(i >= PART_A && i < PART_B){
+            } else if (i >= PART_A && i < PART_B) {
                 typeChildList.get(1).childBeanList.add(bean);
-            }else if(i >= PART_B && i < PART_N){
+            } else if (i >= PART_B && i < PART_N) {
                 typeChildList.get(2).childBeanList.add(bean);
-            }else if(i >= PART_N){
+            } else if (i >= PART_N) {
                 typeChildList.get(3).childBeanList.add(bean);
             }
         }
     }
-    public static final int PART_1 = 0;
-    public static final int PART_A = 8;
+
+//    public static final int PART_0 = 0;
+    public static final int PART_A = 4;
     public static final int PART_B = PART_A + 6;
     public static final int PART_N = PART_B + 5;
 
@@ -75,22 +78,27 @@ public class MainActivity extends AppCompatActivity {
     private ChildBean setIndexBean(int i, String name) {
 //        ChildBean bean = new ChildBean();
 
-        switch (i){
+        switch (i) {
             ////===========PART 1
-            case PART_1 + 0:
+            case 0:
                 return setBeanName(name, LvHyMutiActivity.class);
 
-            case PART_1 + 1:
+            case 1:
                 return setBeanName(name, RvHyMutiActivity.class);
 
-            case PART_1 + 2:
-            return setBeanName(name, RvO1Activity.class);
+            case PART_A + 0:
+                return setBeanName(name, RvO1Activity.class);
+            case PART_A + 1:
+                return setBeanName(name, RvO2Activity.class);
+
+            case PART_B + 1:
+                return setBeanName(name, RvB1Activity.class);
 
         }
         return new ChildBean();
     }
 
-    ChildBean setBeanName(String name, Class cls){
+    ChildBean setBeanName(String name, Class cls) {
         ChildBean bean = new ChildBean();
         bean.name = name;
         bean.cls = cls;
@@ -137,12 +145,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public View getGroupView(int groupPosition, boolean isExpanded,View convertView, ViewGroup parent) {
+        public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
             return getGenericView(getGroup(groupPosition));
         }
 
         @Override
-        public View getChildView(int groupPosition, int childPosition,boolean isLastChild, View convertView, ViewGroup parent) {
+        public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
             return getGenericView(getChild(groupPosition, childPosition));
         }
 
@@ -162,26 +170,26 @@ public class MainActivity extends AppCompatActivity {
             //====
 
             String string = "no Contents";
-            if(obj instanceof TypeBean){
+            if (obj instanceof TypeBean) {
                 string = ((TypeBean) obj).name;
                 tvHeight = 300;
                 textView.setBackgroundColor(Color.GRAY);
-            }else if(obj instanceof  ChildBean){
+            } else if (obj instanceof ChildBean) {
                 string = ((ChildBean) obj).name;
                 tvHeight = 200;
                 final Class cls = ((ChildBean) obj).cls;
                 textView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if(cls == null){
+                        if (cls == null) {
                             Toast.makeText(getApplicationContext(), "没有设置，嘿嘿！！！", Toast.LENGTH_SHORT).show();
-                        }else {
+                        } else {
                             startActivity(new Intent(getApplication(), ((ChildBean) obj).cls));
                         }
 
                     }
                 });
-            }else{
+            } else {
 
             }
             AbsListView.LayoutParams layoutParams = new AbsListView.LayoutParams(
@@ -194,15 +202,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    class TypeBean{
-        TypeBean(String name){
+
+    class TypeBean {
+        TypeBean(String name) {
             this.name = name;
         }
+
         String name;
         ArrayList<ChildBean> childBeanList = new ArrayList<>();
     }
 
-    class ChildBean{
+    class ChildBean {
         String name;
         Class cls;
     }
