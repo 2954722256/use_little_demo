@@ -4,6 +4,8 @@
     <string name="title_activity_main_hy_list">MainHyListActivity</string>
     <string name="title_activity_main_hy_mutil_rv">MainHyMutilRvActivity</string>
     <string name="title_activity_o1">a1</string>
+    <string name="title_activity_rv_o3">RvO3Activity</string>
+    <string name="title_activity_lv_hy_common">LvHyCommonActivity</string>
 
 
 </resources>

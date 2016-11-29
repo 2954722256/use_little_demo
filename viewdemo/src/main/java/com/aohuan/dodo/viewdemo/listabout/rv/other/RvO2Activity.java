@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -116,15 +117,36 @@ public class RvO2Activity extends AppCompatActivity {
                 mRecyclerView.setLayoutManager(llmV);
                 break;
             case R.id.o25:
-                mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
+                GridLayoutManager glm1 = new GridLayoutManager(this, 2);
+                glm1.setOrientation(GridLayoutManager.HORIZONTAL);
+                mRecyclerView.setLayoutManager(glm1);
                 break;
             case R.id.o26:
                 GridLayoutManager glm2 = new GridLayoutManager(this, 2);
-
-                mRecyclerView.setLayoutManager(new GridLayoutManager(this,3));
+                glm2.setOrientation(GridLayoutManager.VERTICAL);
+                glm2.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+                    @Override
+                    public int getSpanSize(int position) {
+                        if(position % 5== 0){
+                            return 2;
+                        }else{
+                            return 1;
+                        }
+                    }
+                });
+                mRecyclerView.setLayoutManager(glm2);
                 break;
             case R.id.o27:
-                mRecyclerView.setLayoutManager(new GridLayoutManager(this,3));
+                StaggeredGridLayoutManager sgm1 = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
+                mRecyclerView.setLayoutManager(sgm1);
+                break;
+            case R.id.o28:
+                StaggeredGridLayoutManager sgm2 = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.HORIZONTAL);
+                mRecyclerView.setLayoutManager(sgm2);
+                break;
+            case R.id.o29:
+                StaggeredGridLayoutManager sgm3 = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
+                mRecyclerView.setLayoutManager(sgm3);
                 break;
         }
 

@@ -51,8 +51,6 @@ public class RvO1Activity extends AppCompatActivity {
         //3、第三种
 //        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
 
-//        layoutManager.set
-
         mRecyclerView.setLayoutManager(layoutManager);
         //绑定适配器
         DynamicHeightRecyclerAdapter adapter = new DynamicHeightRecyclerAdapter(this, getData());

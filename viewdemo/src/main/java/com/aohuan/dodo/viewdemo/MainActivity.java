@@ -13,11 +13,14 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.aohuan.dodo.viewdemo.listabout.listview.hy.LvHyCommonActivity;
 import com.aohuan.dodo.viewdemo.listabout.listview.hy.LvHyMutiActivity;
 import com.aohuan.dodo.viewdemo.listabout.rv.bili.RvB1Activity;
+import com.aohuan.dodo.viewdemo.listabout.rv.hy.RvHyCommonActivity;
 import com.aohuan.dodo.viewdemo.listabout.rv.hy.RvHyMutiActivity;
 import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO1Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO2Activity;
+import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO3Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -81,15 +84,20 @@ public class MainActivity extends AppCompatActivity {
         switch (i) {
             ////===========PART 1
             case 0:
-                return setBeanName(name, LvHyMutiActivity.class);
-
+                return setBeanName(name, LvHyCommonActivity.class);
             case 1:
+                return setBeanName(name, LvHyMutiActivity.class);
+            case 2:
+                return setBeanName(name, RvHyCommonActivity.class);
+            case 3:
                 return setBeanName(name, RvHyMutiActivity.class);
 
             case PART_A + 0:
                 return setBeanName(name, RvO1Activity.class);
             case PART_A + 1:
                 return setBeanName(name, RvO2Activity.class);
+            case PART_A + 2:
+                return setBeanName(name, RvO3Activity.class);
 
             case PART_B + 1:
                 return setBeanName(name, RvB1Activity.class);

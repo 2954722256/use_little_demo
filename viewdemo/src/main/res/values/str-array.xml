@@ -6,16 +6,16 @@
 
 
         <!-- PART 0 -->
-        <item>0 鸿洋多Item的ListView</item>
-        <item>1 鸿洋多Item的RecycleView</item>
-        <item>2 xxxx</item>
-        <item>3 xxxx</item>
+        <item>0 鸿洋一般的ListView</item>
+        <item>1 鸿洋多Item的ListView</item>
+        <item>2 鸿洋一般的RecycleView</item>
+        <item>3 鸿洋多Item的RecycleView</item>
 
 
         <!-- PART A -->
-        <item>0 Rv的LinearLayoutManager纵向</item>
-        <item>0 Rv的LinearLayoutManager横向</item>
-
+        <item>0 Rv的LinearLayoutManager纵向动态高度</item>
+        <item>1 Rv的LinearLayoutManager各种LayoutManager</item>
+        <item>2 Rv的LinearLayoutManager横向xxx</item>
 
     </string-array>
 

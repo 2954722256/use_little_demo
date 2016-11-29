@@ -7,6 +7,19 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,8 +45,18 @@
             android:name=".listabout.rv.other.RvO1Activity"
             android:label="@string/title_activity_o1" />
         <activity android:name=".listabout.rv.bili.RvB1Activity" />
-
-        <activity android:name=".listabout.rv.other.RvO2Activity" android:theme="@style/AppTheme2"/>
+        <activity
+            android:name=".listabout.rv.other.RvO2Activity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".listabout.rv.other.RvO3Activity"
+            android:label="@string/title_activity_rv_o3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listabout.listview.hy.LvHyCommonActivity"
+            android:label="@string/title_activity_lv_hy_common"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".listabout.rv.hy.RvHyCommonActivity"></activity>
     </application>
 
 </manifest>
