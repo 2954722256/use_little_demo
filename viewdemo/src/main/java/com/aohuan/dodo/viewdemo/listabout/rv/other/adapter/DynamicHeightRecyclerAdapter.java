@@ -112,4 +112,5 @@ public class DynamicHeightRecyclerAdapter extends RecyclerView.Adapter<DynamicHe
     public interface OnItemClickListener {
         void onItemClick(int position, DynamicHeightBean bean);
     }
+
 }

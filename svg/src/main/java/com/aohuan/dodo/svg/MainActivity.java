@@ -18,25 +18,28 @@ public class MainActivity extends AutoLayoutActivity {
 
         svgView = (AnimatedSvgView) findViewById(R.id.animated_svg_view);
         svgView2 = (AnimatedSvgView) findViewById(R.id.animated_svg_view2);
+        doSvgView(svgView);
+        doSvgView(svgView2);
+    }
 
-        svgView.postDelayed(new Runnable() {
+    public void doSvgView(final AnimatedSvgView sv){
+        sv.postDelayed(new Runnable() {
 
             @Override public void run() {
-                svgView.start();
+                sv.start();
             }
         }, 500);
 
-        svgView.setOnClickListener(new View.OnClickListener() {
+        sv.setOnClickListener(new View.OnClickListener() {
 
             @Override public void onClick(View v) {
-                if (svgView.getState() == AnimatedSvgView.STATE_FINISHED) {
-                    svgView.start();
+                if (sv.getState() == AnimatedSvgView.STATE_FINISHED) {
+                    sv.start();
                 }
             }
         });
 
-        svgView.setOnStateChangeListener(new AnimatedSvgView.OnStateChangeListener() {
-
+        sv.setOnStateChangeListener(new AnimatedSvgView.OnStateChangeListener() {
             @Override public void onStateChange(int state) {
                 if (state == AnimatedSvgView.STATE_TRACE_STARTED) {
                     findViewById(R.id.btn_previous).setEnabled(false);
@@ -50,24 +53,27 @@ public class MainActivity extends AutoLayoutActivity {
         });
     }
 
+
     public void onNext(View view) {
         if (++index >= SVG.values().length) index = 0;
-        setSvg(SVG.values()[index]);
+        setSvg(svgView, SVG.values()[index]);
+        setSvg(svgView2, SVG.values()[index]);
     }
 
     public void onPrevious(View view) {
         if (--index < 0) index = SVG.values().length - 1;
-        setSvg(SVG.values()[index]);
+        setSvg(svgView, SVG.values()[index]);
+        setSvg(svgView2, SVG.values()[index]);
     }
 
-    private void setSvg(SVG svg) {
-        svgView.setGlyphStrings(svg.glyphs);
-        svgView.setFillColors(svg.colors);
-        svgView.setViewportSize(svg.width, svg.height);
-        svgView.setTraceResidueColor(0x32000000);
-        svgView.setTraceColors(svg.colors);
-        svgView.rebuildGlyphData();
-        svgView.start();
+    private void setSvg(AnimatedSvgView sv, SVG svg) {
+        sv.setGlyphStrings(svg.glyphs);
+        sv.setFillColors(svg.colors);
+        sv.setViewportSize(svg.width, svg.height);
+        sv.setTraceResidueColor(0x32000000);
+        sv.setTraceColors(svg.colors);
+        sv.rebuildGlyphData();
+        sv.start();
     }
 
 }

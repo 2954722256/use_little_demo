@@ -14,6 +14,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello World");
         doSth1();
+        String str = "\"list_img\": \"goodsimg/1479173877933.jpg?imageMogr2/thumbnail/400x400!\"";
+
     }
 
     private static void doSth1() throws IOException {
@@ -21,13 +23,6 @@ public class Main {
 //        DoSth1.test2ConnectBody();
 //        DoSth1.test3Article();
     }
-
-
-
-
-
-
-
 
 
 }
