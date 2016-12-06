@@ -6,7 +6,9 @@ http://www.jianshu.com/users/edadc0d25b46/latest_articles
  
 简单模块说明：
 
- -  app：  暂时是空的，没有做操作
+
+ 
+ -  app：  暂时是空的，没有做操作
  -  annotation_test  一些帮助理解的注解的例子
  -  bottomnavigation  底部导航
  -  coordinator  CoordinatorLayout相关的一些理解 和 小demo
