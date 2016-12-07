@@ -19,6 +19,26 @@ public class Example2 {
 
         String[] players = {"Rafael Nadal", "Novak Djokovic", "Stanislas Wawrinka", "David Ferrer", "Roger Federer", "Andy Murray", "Tomas Berdych", "Juan Martin Del Potro", "Richard Gasquet", "John Isner"};
 
+        sortPlayer(players);
+//
+//        sortPlayerSubName(players);
+//
+//        sortPlayerLength(players);
+//
+//        sortPlayerLastLetter(players);
+
+    }
+
+
+
+
+    /**
+     * 排序 String数组
+     *  实现 Comparator接口
+     *      用 匿名内部类 ， lambda表达式等
+     * @param players
+     */
+    private static void sortPlayer(String[] players) {
         // Show the list of players
         System.out.print("Show the list of players:\n");
         Arrays.asList(players).forEach((player) -> System.out.println(player));
@@ -40,6 +60,16 @@ public class Example2 {
         System.out.print("\nShow the list of players after sorting by name:\n");
         Arrays.asList(players).forEach((player) -> System.out.println(player));
 
+    }
+
+    /**
+     * 按player的subname排序
+     *  实现 Comparator接口
+     *      用 匿名内部类 ， lambda表达式等
+     * @param players
+     */
+    private static void sortPlayerSubName(String[] players) {
+
         // Sort players by surname using anonymous innerclass
         Arrays.sort(players, new Comparator<String>() {
             @Override
@@ -56,7 +86,15 @@ public class Example2 {
 
         System.out.print("\nShow the list of players after sorting by surname:\n");
         Arrays.asList(players).forEach((player) -> System.out.println(player));
+    }
 
+    /**
+     * 按player的 字符串长度 排序
+     *  实现 Comparator接口
+     *      用 匿名内部类 ， lambda表达式等
+     * @param players
+     */
+    private static void sortPlayerLength(String[] players) {
         // Sort players by name lenght using anonymous innerclass
         Arrays.sort(players, new Comparator<String>() {
             @Override
@@ -73,7 +111,15 @@ public class Example2 {
 
         System.out.print("\nShow the list of players after sorting by length:\n");
         Arrays.asList(players).forEach((player) -> System.out.println(player));
+    }
 
+    /**
+     * 按player的 最后一个字母 排序
+     *  实现 Comparator接口
+     *      用 匿名内部类 ， lambda表达式等
+     * @param players
+     */
+    private static void sortPlayerLastLetter(String[] players) {
         // Sort players by last letter using anonymous innerclass
         Arrays.sort(players, new Comparator<String>() {
             @Override

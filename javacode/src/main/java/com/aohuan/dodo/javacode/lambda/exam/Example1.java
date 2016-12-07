@@ -62,7 +62,7 @@ public class Example1 {
 //        System.out.println("");
 
         // Using double colon operator in Java 8
-        doubleColonOperator();
+        doubleColonOperator(players);
 
 
 //        System.out.println("");
@@ -72,7 +72,7 @@ public class Example1 {
      * Using double colon operator in Java 8
      * 用java8中的 ::
      */
-    private static void doubleColonOperator() {
+    private static void doubleColonOperator(List<String> players) {
         players.forEach(System.out::println);
     }
 

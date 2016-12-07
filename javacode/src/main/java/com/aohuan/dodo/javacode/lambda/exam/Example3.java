@@ -32,24 +32,53 @@ public class Example3 {
 
         addData();
 
-        forEachPrint();
-
-        filterPrint();
-
-        sortedPrint();
-
-        mapCollectPrint();
-
+//        consumerForEachPrint();
+//        filterPrint();
+//        sortedPrint();
+//        mapCollectPrint();
         streamSumPrint();
-
+//        intSummaryStatistics();
     }
 
+    /**
+     * consumer forEach examples
+     */
+    private static void consumerForEachPrint() {
+        // forEach examples
+        // Print programmers name
+        System.out.println("Print programmers names:");
+        javaProgrammers.forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
+        phpProgrammers.forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
+
+        // Increase salary by 5% to programmers
+        System.out.println("\n\nIncrease salary by 5% to programmers:");
+        Consumer<Person> giveRaise = e -> e.setSalary(e.getSalary() / 100 * 5 + e.getSalary());
+        Consumer<Person> giveRaisePhp = new Consumer<Person>() {
+            @Override
+            public void accept(Person person) {
+                person.setSalary(person.getSalary() / 100 * 110);
+            }
+        };
+
+        javaProgrammers.forEach(giveRaise);
+//        phpProgrammers.forEach(giveRaisePhp);
+        for(Person p : phpProgrammers){
+            giveRaisePhp.accept(p);
+        }
+        javaProgrammers.forEach((p) -> System.out.printf("%s earns now $%,d.%n", p.getFirstName(), p.getSalary()));
+        System.out.println("---");
+        phpProgrammers.forEach((p) -> System.out.printf("%s earns now $%,d.%n", p.getFirstName(), p.getSalary()));
+    }
+
+    /**
+     * filter examples
+     */
     private static void filterPrint(){
         // filter examples
         // Print PHP programmers that earn more than $1,400
         System.out.println("\nPHP programmers that earn more than $1,400:");
         phpProgrammers.stream()
-                .filter((p) -> (p.getSalary() > 1400))
+                .filter(p -> p.getSalary() > 1400)
                 .forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
 
         // Define some filters
@@ -140,6 +169,7 @@ public class Example3 {
 
         System.out.println(phpDevelopers);
 
+        System.out.println("---");
         System.out.println("\nGet Java programmers first name to Set:");
         Set<String> javaDevFirstName = javaProgrammers
                 .stream()
@@ -147,7 +177,9 @@ public class Example3 {
                 .collect(toSet());
 
         javaDevFirstName.stream().forEach((s) -> System.out.printf("%s ", s));
+        System.out.println("");
 
+        System.out.println("---");
         System.out.println("\nGet Java programmers last name to TreeSet:");
         TreeSet<String> javaDevLastName = javaProgrammers
                 .stream()
@@ -156,14 +188,17 @@ public class Example3 {
 
         javaDevLastName.stream().forEach((s) -> System.out.printf("%s ", s));
 
-        int numProcessorsOrCores = Runtime.getRuntime().availableProcessors();
-        System.out.printf("\n\nParallel version on %s-core machine:", numProcessorsOrCores);
+
     }
 
     /**
      * parrallel stream, sum examples
      */
     private static void streamSumPrint() {
+        int numProcessorsOrCores = Runtime.getRuntime().availableProcessors();
+        System.out.printf("\n\nParallel version on %s-core machine:", numProcessorsOrCores);
+        System.out.println();
+
         // parrallel stream, sum examples
         System.out.println("\nCalculate total money spent for paying Java programmers:");
         int totalSalary = javaProgrammers
@@ -172,7 +207,12 @@ public class Example3 {
                 .sum();
 
         System.out.printf("Money spent for paying Java programmers: $%,d %n", totalSalary);
+    }
 
+    /**
+     * Get count, min, max, sum, and average for numbers
+     */
+    public static void intSummaryStatistics(){
         //Get count, min, max, sum, and average for numbers
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         IntSummaryStatistics stats = numbers
@@ -187,25 +227,7 @@ public class Example3 {
     }
 
 
-    /**
-     * forEach examples
-     */
-    private static void forEachPrint() {
-        // forEach examples
-        // Print programmers name
-        System.out.println("Print programmers names:");
-        javaProgrammers.forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
-        phpProgrammers.forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
 
-        // Increase salary by 5% to programmers
-        System.out.println("\n\nIncrease salary by 5% to programmers:");
-        Consumer<Person> giveRaise = e -> e.setSalary(e.getSalary() / 100 * 5 + e.getSalary());
-
-        javaProgrammers.forEach(giveRaise);
-        phpProgrammers.forEach(giveRaise);
-        javaProgrammers.forEach((p) -> System.out.printf("%s earns now $%,d.%n", p.getFirstName(), p.getSalary()));
-        phpProgrammers.forEach((p) -> System.out.printf("%s earns now $%,d.%n", p.getFirstName(), p.getSalary()));
-    }
 
     /**
      * Data
