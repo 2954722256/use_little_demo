@@ -5,6 +5,8 @@ dependencies {
 //    compile 'com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION'
     compile group: 'org.jsoup', name: 'jsoup', version: '1.10.1'    //jsoup， 爬取网站用
 
+    compile 'io.reactivex:rxjava:1.0.14'        //ReactiveX/RxJava  如果是android，可以参考 https://github.com/ReactiveX/RxAndroid
+
 //    // jodd 可以见  http://jodd.org/
 //    compile group: 'org.jodd', name: 'jodd-core', version: '3.8'  //jodd，已经简单的工具框架，很好用
 //
