@@ -1,4 +1,4 @@
-package com.aohuan.dodo.rx.qt5;
+package com.aohuan.dodo.rx.qt5.counter;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,9 +7,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.aohuan.dodo.rx.R;
-import com.aohuan.dodo.rx.qt5.cont.MainContract;
-import com.aohuan.dodo.rx.qt5.presenter.MainPresenter;
-import com.aohuan.dodo.rx.qt5.utils.ToastUtils;
+import com.aohuan.dodo.rx.qt5.counter.cont.MainContract;
+import com.aohuan.dodo.rx.qt5.counter.presenter.MainPresenter;
+import com.aohuan.dodo.rx.qt5.counter.utils.ToastUtils;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aohuan.dodo.rx">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".qt5.Q0Activity"></activity>
+        <activity android:name=".qt5.counter.Q0Activity" />
+        <activity android:name=".qt5.pic.Q1Activity" />
+        <activity android:name=".qt5.pic.Q1ShowPicActivity" />
+        <activity android:name=".retrofit.hello.R0Activity"></activity>
     </application>
 
 </manifest>

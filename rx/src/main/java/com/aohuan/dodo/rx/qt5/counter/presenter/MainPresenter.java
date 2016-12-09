@@ -1,11 +1,10 @@
-package com.aohuan.dodo.rx.qt5.presenter;
+package com.aohuan.dodo.rx.qt5.counter.presenter;
 
 import android.app.Activity;
 import android.widget.TextView;
 
-import com.aohuan.dodo.rx.qt5.Q0Activity;
-import com.aohuan.dodo.rx.qt5.cont.MainContract;
-import com.aohuan.dodo.rx.qt5.model.MainModel;
+import com.aohuan.dodo.rx.qt5.counter.cont.MainContract;
+import com.aohuan.dodo.rx.qt5.counter.model.MainModel;
 
 /**
  * Created by dodo_lihao on 2016/12/9.

@@ -1,14 +1,13 @@
-package com.aohuan.dodo.rx.qt5.model;
+package com.aohuan.dodo.rx.qt5.counter.model;
 
 import android.app.Activity;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 
-import com.aohuan.dodo.rx.qt5.Q0Activity;
-import com.aohuan.dodo.rx.qt5.cont.MainContract;
-import com.aohuan.dodo.rx.qt5.utils.ThreadUtils;
-import com.aohuan.dodo.rx.qt5.utils.TimeUitls;
+import com.aohuan.dodo.rx.qt5.counter.cont.MainContract;
+import com.aohuan.dodo.rx.qt5.counter.utils.ThreadUtils;
+import com.aohuan.dodo.rx.qt5.counter.utils.TimeUitls;
 
 import java.lang.ref.WeakReference;
 

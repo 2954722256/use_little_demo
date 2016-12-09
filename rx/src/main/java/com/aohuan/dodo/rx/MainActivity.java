@@ -13,7 +13,8 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.aohuan.dodo.rx.qt5.Q0Activity;
+import com.aohuan.dodo.rx.qt5.counter.Q0Activity;
+import com.aohuan.dodo.rx.qt5.pic.Q1Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -75,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
             ////===========PART 1
             case PART_1 + 0:
                 return setBeanName(name, Q0Activity.class);
-//            case PART_1 +1:
-//                return setBeanName(name, Main1Activity.class);
+            case PART_1 +1:
+                return setBeanName(name, Q1Activity.class);
 //            case PART_1 +2:
 //                return setBeanName(name, Main2Activity.class);
 //            case PART_1 +3:

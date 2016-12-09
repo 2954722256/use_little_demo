@@ -1,10 +1,10 @@
-package com.aohuan.dodo.rx.qt5.cont;
+package com.aohuan.dodo.rx.qt5.counter.cont;
 
 import android.app.Activity;
 import android.widget.TextView;
 
-import com.aohuan.dodo.rx.qt5.base.IBasePresenter;
-import com.aohuan.dodo.rx.qt5.base.IBaseView;
+import com.aohuan.dodo.rx.qt5.counter.base.IBasePresenter;
+import com.aohuan.dodo.rx.qt5.counter.base.IBaseView;
 
 /**
  * Created by dodo_lihao on 2016/12/9.
