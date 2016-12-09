@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页导航的跳转名字 -->
+    <string-array name="typelist">
+
+
+        <!-- PART 0 -->
+        <item>0 最开始的</item>
+
+
+
+    </string-array>
+
+    <!-- 一级菜单 -->
+    <string-array name="typetop">
+        <!-- PART N -->
+        <item>PART 0</item>
+        <!--<item>PART xx</item>-->
+    </string-array>
+
+
+</resources>

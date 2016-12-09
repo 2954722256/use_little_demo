@@ -1,6 +1,6 @@
 package com.aohuan.dodo.javacode.rx.demo;
 
-import java.util.ArrayList;
+import com.aohuan.dodo.javacode.rx.demo.bean.Person;
 
 import rx.Observable;
 import rx.functions.Action1;
@@ -17,7 +17,8 @@ public class Demo4 {
     public static void main(String[] args) {
         Demo4 d4 = new Demo4();
 //        d4.rxMap();
-        d4.rxMap2();
+//        d4.rxMap2();
+        d4.rxFlatMap();
     }
 
 
@@ -55,8 +56,8 @@ public class Demo4 {
         Observable.just(p1, p2).map(new Func1<Person, Person>() {
             @Override
             public Person call(Person s) {
-                if (s.age > 30) {
-                    s.age -= 5;
+                if (s.getAge() > 30) {
+                    s.setAge(s.getAge() - 5);
                 }
                 return s;
             }
@@ -64,21 +65,38 @@ public class Demo4 {
             @Override
             public void call(Person s) {
                 System.out.println("--- onNext in Observer --");
-                System.out.println(s.name + " : " + s.age);
+                System.out.println(s.getName() + " : " + s.getAge());
+            }
+        });
+    }
+
+    /**
+     * flatMap  和map 类似，
+     * 把传如的内容， 简单处理， 得到新的对象
+     * <p>
+     * 这里传入一个Person， 根据年龄， 简单做修改传出
+     */
+    private void rxFlatMap(){
+        Person p1 = new Person("dodo1", 38);
+        Person p2 = new Person("dodo2", 25);
+        Observable.just(p1, p2).flatMap(new Func1<Person, Observable<Person>>() {
+            @Override
+            public Observable<Person> call(Person s) {
+                if (s.getAge() > 30) {
+                    s.setAge(s.getAge() - 5);
+                }
+                return Observable.just(s);
+            }
+        }).subscribe(new Action1<Person>() {
+            @Override
+            public void call(Person s) {
+                System.out.println("--- onNext in Observer --");
+                System.out.println(s.getName() + " : " + s.getAge());
             }
         });
     }
 
 
-    class Person {
-        String name = "";
-        int age = 0;
-
-        Person(String name, int age) {
-            this.name = name;
-            this.age = age;
-        }
-    }
-
-
 }
+
+
