@@ -22,9 +22,11 @@
 
 
         <!-- PART B -->
-        <item>0 header in SectionedRecyclerViewAdapter</item>
-        <item>1 xxx in SectionedRecyclerViewAdapter</item>
-        <item>2 xxx in SectionedRecyclerViewAdapter</item>
+        <item>0 header List in SectionedRecyclerViewAdapter</item>
+        <item>1 headerAndFooter List in SectionedRecyclerViewAdapter</item>
+        <item>2 Expandable List in SectionedRecyclerViewAdapter</item>
+        <item>3 Expandable Grid header in SectionedRecyclerViewAdapter</item>
+        <item>4 MultiType in SectionedRecyclerViewAdapter</item>
 
     </string-array>
 
