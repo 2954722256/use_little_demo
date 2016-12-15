@@ -32,6 +32,9 @@ dependencies {
     compile 'com.zhy:base-adapter:3.0.3'    //鸿洋 非rv的adapter
     compile 'com.zhy:base-rvadapter:3.0.3'  //鸿洋 rv的adapter
 
+    //分块的RecycleView， bilibili的demo也用过， 地址为https://github.com/luizgrp/SectionedRecyclerViewAdapter
+    compile 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.0.4'
+
     compile 'com.alibaba:fastjson:1.1.41'   //json 解析 fastjson
     compile group: 'com.google.code.gson', name: 'gson', version: '2.4' //json 解析 gson
     compile 'com.jakewharton:butterknife:5.1.1'     //butterknife 注解

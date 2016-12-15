@@ -16,6 +16,15 @@
         <item>0 Rv的LinearLayoutManager纵向动态高度</item>
         <item>1 Rv的LinearLayoutManager各种LayoutManager</item>
         <item>2 Rv的LinearLayoutManager横向xxx</item>
+        <item>3 Rv的</item>
+        <item>4 Rv的</item>
+        <item>5 Rv的</item>
+
+
+        <!-- PART B -->
+        <item>0 header in SectionedRecyclerViewAdapter</item>
+        <item>1 xxx in SectionedRecyclerViewAdapter</item>
+        <item>2 xxx in SectionedRecyclerViewAdapter</item>
 
     </string-array>
 
@@ -24,7 +33,7 @@
         <!-- PART N -->
         <item>PART 0 鸿洋Adapter简单使用</item>
         <item>PART 1 RecycleView简单使用</item>
-
+        <item>PART 2 SectionedRecyclerViewAdapter简单使用</item>
         <!--<item>PART xx</item>-->
     </string-array>
 

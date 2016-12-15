@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import com.aohuan.dodo.rx.qt5.counter.Q0Activity;
 import com.aohuan.dodo.rx.qt5.pic.Q1Activity;
+import com.aohuan.dodo.rx.retrofit.hello.R0Activity;
+import com.aohuan.dodo.rx.retrofit.hello.R1Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public static final int PART_1 = 0;
-    public static final int PART_A = 8;
+    public static final int PART_A = 4;
     public static final int PART_B = PART_A + 6;
     public static final int PART_N = PART_B + 5;
 
@@ -94,10 +96,10 @@ public class MainActivity extends AppCompatActivity {
 //
 //            ////===========PART_A
 //
-//            case PART_A + 0:
-//                return setBeanName(name, MainA0Activity.class);
-//            case PART_A + 1:
-//                return setBeanName(name, MainA1Activity.class);
+            case PART_A + 0:
+                return setBeanName(name, R0Activity.class);
+            case PART_A + 1:
+                return setBeanName(name, R1Activity.class);
 //            case PART_A + 2:
 //                return setBeanName(name, MainA2Activity.class);
 //            case PART_A + 3:

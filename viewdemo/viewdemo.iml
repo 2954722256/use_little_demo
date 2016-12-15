@@ -69,6 +69,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundles" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dependency-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/io.github.luizgrp.sectionedrecyclerviewadapter/sectionedrecyclerviewadapter/1.0.4/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-support" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
@@ -89,6 +90,7 @@
     <orderEntry type="library" exported="" name="gson-2.4" level="project" />
     <orderEntry type="library" exported="" name="base-adapter-3.0.3" level="project" />
     <orderEntry type="library" exported="" name="butterknife-5.1.1" level="project" />
+    <orderEntry type="library" exported="" name="sectionedrecyclerviewadapter-1.0.4" level="project" />
     <orderEntry type="library" exported="" name="support-v4-25.0.0" level="project" />
     <orderEntry type="library" exported="" name="support-media-compat-25.0.0" level="project" />
     <orderEntry type="library" exported="" name="transition-25.0.0" level="project" />

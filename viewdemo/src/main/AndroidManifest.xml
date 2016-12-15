@@ -56,7 +56,10 @@
             android:name=".listabout.listview.hy.LvHyCommonActivity"
             android:label="@string/title_activity_lv_hy_common"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".listabout.rv.hy.RvHyCommonActivity"></activity>
+        <activity android:name=".listabout.rv.hy.RvHyCommonActivity" />
+        <activity android:name=".listabout.rv.sectioned.RvS1Activity" />
+        <activity android:name=".listabout.rv.sectioned.RvS2Activity"/>
+        <activity android:name=".listabout.rv.sectioned.RvS3Activity"/>
     </application>
 
 </manifest>
