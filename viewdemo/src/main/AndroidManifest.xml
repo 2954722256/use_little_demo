@@ -62,7 +62,7 @@
         <activity android:name=".listabout.rv.sectioned.RvS2Activity"/>
         <activity android:name=".listabout.rv.sectioned.RvS3Activity"/>
         <activity android:name=".listabout.rv.sectioned.RvS4Activity"/>
-
+        <activity android:name=".listabout.rv.sectioned.RvS5Activity"/>
     </application>
 
 </manifest>

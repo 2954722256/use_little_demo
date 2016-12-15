@@ -24,7 +24,7 @@ import butterknife.InjectView;
  * 这里通过 compile 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.0.4'
  *      导入不了， 只有将源码copy进来了
  *
- *      这里简单做了  header
+ *      expanded Grid  的显示
  *
  */
 public class RvS4Activity extends AppCompatActivity {
@@ -58,8 +58,10 @@ public class RvS4Activity extends AppCompatActivity {
         glm.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
             public int getSpanSize(int position) {
-                switch(sectionAdapter.getSectionItemViewType(position)) {
-                    case io.github.luizgrp.sectionedrecyclerviewadapter.SectionedRecyclerViewAdapter.VIEW_TYPE_HEADER:
+                switch (sectionAdapter.getSectionItemViewType(position)) {
+                    case SectionedRecyclerViewAdapter.VIEW_TYPE_HEADER:
+                        return 2;
+                    case SectionedRecyclerViewAdapter.VIEW_TYPE_FOOTER:
                         return 2;
                     default:
                         return 1;

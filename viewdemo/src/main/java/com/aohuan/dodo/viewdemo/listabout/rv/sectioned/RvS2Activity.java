@@ -19,6 +19,12 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
+
+/**
+ * Header and Footer 的 ListView类型
+ *
+ *
+ */
 public class RvS2Activity extends AppCompatActivity {
 
 
