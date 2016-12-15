@@ -24,6 +24,7 @@ import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO3Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS1Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS2Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS3Activity;
+import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS4Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -108,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
                 return setBeanName(name, RvS2Activity.class);
             case PART_B + 2:
                 return setBeanName(name, RvS3Activity.class);
+            case PART_B + 3:
+                return setBeanName(name, RvS4Activity.class);
 
         }
         return new ChildBean();
