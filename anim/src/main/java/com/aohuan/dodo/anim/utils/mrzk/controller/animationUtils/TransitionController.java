@@ -247,7 +247,6 @@ public class TransitionController {
      * @return
      */
     private int getStatusBarHeight(Activity activity) {
-
         return BarUtils.getStatusBarHeight(activity);
     }
 }

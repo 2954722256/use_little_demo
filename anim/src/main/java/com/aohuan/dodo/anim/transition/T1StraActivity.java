@@ -63,7 +63,7 @@ public class T1StraActivity extends AppCompatActivity {
             @Override
             public void onTransitionEnd(Animator animator) {
                 getSupportActionBar().show();
-                mFloatingActionButton.animate().setDuration(300).scaleX(1).scaleY(1);
+                mFloatingActionButton.animate().setDuration(500).scaleX(1).scaleY(1);
 
 //                Animator mAnimator = ObjectAnimator.ofFloat(nsv, "translationY", nsv.getHeight(), 0);
 ////                Animator mAnimator = ViewAnimationCompatUtils.createCircularReveal( nsv, 0, 0, nsv.getWidth() / 2, nsv.getHeight());
@@ -99,8 +99,8 @@ public class T1StraActivity extends AppCompatActivity {
         Log.e("type", ConstantsT.getAnimType().toString()+" -- ");
         switch (ConstantsT.getAnimType()) {
             case ANIM_TYPE_STRAIGHT:
-                return ObjectAnimator.ofFloat(nsv, "translationY", nsv.getHeight(), 0);
-
+//                return ObjectAnimator.ofFloat(nsv, "translationY", nsv.getHeight(), 0);
+                return ObjectAnimator.ofFloat(nsv, "translationX", nsv.getHeight(), 0);
             case ANIM_TYPE_CIRCULAR_REVEAL:
                 return ViewAnimationCompatUtils.createCircularReveal(cardview, 0, 0, cardview.getWidth() / 2, cardview.getHeight());
 
