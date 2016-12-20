@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/anim" />
             <option value="$PROJECT_DIR$/annotation_test" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bottomnavigation" />
@@ -18,6 +19,7 @@
             <option value="$PROJECT_DIR$/rx" />
             <option value="$PROJECT_DIR$/stickynav" />
             <option value="$PROJECT_DIR$/svg" />
+            <option value="$PROJECT_DIR$/up5.0" />
             <option value="$PROJECT_DIR$/viewdemo" />
           </set>
         </option>

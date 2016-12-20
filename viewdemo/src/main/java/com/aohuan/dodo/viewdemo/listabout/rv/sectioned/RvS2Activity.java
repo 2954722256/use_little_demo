@@ -36,7 +36,7 @@ public class RvS2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rv_s2);
+        setContentView(R.layout.activity_rv_s1);
         ButterKnife.inject(this);
         init();
     }

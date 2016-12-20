@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页导航的跳转名字 -->
+    <string-array name="typelist">
+
+
+        <!-- PART 0 -->
+        <item>0 XXXX</item>
+        <!--<item>1 XXXX</item>-->
+        <!--<item>2 XXXX</item>-->
+        <!--<item>3 XXXX</item>-->
+
+
+        <!-- PART A -->
+        <!--<item>0 XXXX</item>-->
+        <!--<item>1 XXXX</item>-->
+        <!--<item>2 XXXX</item>-->
+        <!--<item>3 XXXX</item>-->
+        <!--<item>4 XXXX</item>-->
+        <!--<item>5 XXXX</item>-->
+
+
+        <!-- PART B -->
+        <!--<item>0 XXXX</item>-->
+        <!--<item>1 XXXX</item>-->
+        <!--<item>2 XXXX</item>-->
+        <!--<item>3 XXXX</item>-->
+        <!--<item>4 XXXX</item>-->
+
+    </string-array>
+
+    <!-- 一级菜单 -->
+    <string-array name="typetop">
+        <!-- PART N -->
+        <item>PART 0 简单动画</item>
+        <!--<item>PART xx</item>-->
+    </string-array>
+
+
+
+
+</resources>

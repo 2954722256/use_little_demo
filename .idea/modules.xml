@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/anim/anim.iml" filepath="$PROJECT_DIR$/anim/anim.iml" />
       <module fileurl="file://$PROJECT_DIR$/annotation_test/annotation_test.iml" filepath="$PROJECT_DIR$/annotation_test/annotation_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bottomnavigation/bottomnavigation.iml" filepath="$PROJECT_DIR$/bottomnavigation/bottomnavigation.iml" />
@@ -11,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/rx/rx.iml" filepath="$PROJECT_DIR$/rx/rx.iml" />
       <module fileurl="file://$PROJECT_DIR$/stickynav/stickynav.iml" filepath="$PROJECT_DIR$/stickynav/stickynav.iml" />
       <module fileurl="file://$PROJECT_DIR$/svg/svg.iml" filepath="$PROJECT_DIR$/svg/svg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/up5.0/up5.0.iml" filepath="$PROJECT_DIR$/up5.0/up5.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/use_little_demo.iml" filepath="$PROJECT_DIR$/use_little_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewdemo/viewdemo.iml" filepath="$PROJECT_DIR$/viewdemo/viewdemo.iml" />
     </modules>
