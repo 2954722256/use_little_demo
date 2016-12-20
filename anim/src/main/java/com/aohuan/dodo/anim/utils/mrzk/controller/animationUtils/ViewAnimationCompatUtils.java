@@ -3,8 +3,9 @@ package com.aohuan.dodo.anim.utils.mrzk.controller.animationUtils;
 import android.animation.Animator;
 import android.view.View;
 
-import com.mrzk.transitioncontroller.controller.view.CircularRevealLayout;
-import com.mrzk.transitioncontroller.controller.view.RectRevealLayout;
+import com.aohuan.dodo.anim.utils.mrzk.controller.view.CircularRevealLayout;
+import com.aohuan.dodo.anim.utils.mrzk.controller.view.RectRevealLayout;
+
 
 /**
  * Created by zhangke on 2016-11-4.

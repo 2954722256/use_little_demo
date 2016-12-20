@@ -16,7 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".ripple.Rip01Activity" />
-        <activity android:name=".ripple.Rip02RevealActivity"></activity>
+        <activity android:name=".ripple.Rip02RevealActivity" />
+        <activity android:name=".transition.T0MidActivity" />
+        <activity android:name=".transition.T1StraActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".transition.T2CircularActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".transition.T3RectActivity" android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

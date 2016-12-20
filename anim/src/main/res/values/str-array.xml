@@ -6,19 +6,19 @@
 
 
         <!-- PART 0 -->
-        <item>0 XXXX</item>
-        <!--<item>1 XXXX</item>-->
-        <!--<item>2 XXXX</item>-->
-        <!--<item>3 XXXX</item>-->
+        <item>0 rip</item>
+        <item>1 XXXX</item>
+        <item>2 XXXX</item>
+        <item>3 XXXX</item>
 
 
         <!-- PART A -->
-        <!--<item>0 XXXX</item>-->
-        <!--<item>1 XXXX</item>-->
-        <!--<item>2 XXXX</item>-->
-        <!--<item>3 XXXX</item>-->
-        <!--<item>4 XXXX</item>-->
-        <!--<item>5 XXXX</item>-->
+        <item>0 ANIM_TYPE_STRAIGHT </item>
+        <item>1 ANIM_TYPE_CIRCULAR_REVEAL</item>
+        <item>2 ANIM_TYPE_RECT_REVEAL</item>
+        <item>3 XXXX</item>
+        <item>4 XXXX</item>
+        <item>5 XXXX</item>
 
 
         <!-- PART B -->
@@ -34,7 +34,7 @@
     <string-array name="typetop">
         <!-- PART N -->
         <item>PART 0 简单动画</item>
-        <!--<item>PART xx</item>-->
+        <item>PART 1 transition up 4.0</item>
     </string-array>
 
 

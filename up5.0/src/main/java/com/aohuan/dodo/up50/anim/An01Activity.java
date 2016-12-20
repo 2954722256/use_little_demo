@@ -12,4 +12,10 @@ public class An01Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_an01);
     }
+
+
+
+
+
+
 }

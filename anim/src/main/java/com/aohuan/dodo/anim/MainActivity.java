@@ -16,6 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aohuan.dodo.anim.ripple.Rip01Activity;
+import com.aohuan.dodo.anim.transition.ConstantsT;
+import com.aohuan.dodo.anim.transition.T0MidActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -90,13 +92,15 @@ public class MainActivity extends AppCompatActivity {
 //            case 3:
 //                return setBeanName(name, RvHyMutiActivity.class);
 //
-//            case PART_A + 0:
-//                return setBeanName(name, RvO1Activity.class);
-//            case PART_A + 1:
-//                return setBeanName(name, RvO2Activity.class);
-//            case PART_A + 2:
-//                return setBeanName(name, RvO3Activity.class);
-//
+            case PART_A + 0:
+                ConstantsT.setAnimType(ConstantsT.AnimType.ANIM_TYPE_STRAIGHT);
+                return setBeanName(name, T0MidActivity.class);
+            case PART_A + 1:
+                ConstantsT.setAnimType(ConstantsT.AnimType.ANIM_TYPE_CIRCULAR_REVEAL);
+                return setBeanName(name, T0MidActivity.class);
+            case PART_A + 2:
+                ConstantsT.setAnimType(ConstantsT.AnimType.ANIM_TYPE_RECT_REVEAL);
+                return setBeanName(name, T0MidActivity.class);//
 //            case PART_B + 0:
 //                return setBeanName(name, RvS1Activity.class);
 //            case PART_B + 1:
