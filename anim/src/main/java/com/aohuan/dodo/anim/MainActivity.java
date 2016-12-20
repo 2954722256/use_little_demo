@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Explode;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 import com.aohuan.dodo.anim.ripple.Rip01Activity;
 import com.aohuan.dodo.anim.transition.ConstantsT;
 import com.aohuan.dodo.anim.transition.T0MidActivity;
+import com.aohuan.dodo.anim.transition.T1StraActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -79,8 +81,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     private ChildBean setIndexBean(int i, String name) {
-//        ChildBean bean = new ChildBean();
-
         switch (i) {
             ////===========PART 1
             case 0:
@@ -93,14 +93,17 @@ public class MainActivity extends AppCompatActivity {
 //                return setBeanName(name, RvHyMutiActivity.class);
 //
             case PART_A + 0:
-                ConstantsT.setAnimType(ConstantsT.AnimType.ANIM_TYPE_STRAIGHT);
-                return setBeanName(name, T0MidActivity.class);
+                ChildBean cb0 = setBeanName(name, T0MidActivity.class);
+                cb0.intOther = 0;
+                return cb0;
             case PART_A + 1:
-                ConstantsT.setAnimType(ConstantsT.AnimType.ANIM_TYPE_CIRCULAR_REVEAL);
-                return setBeanName(name, T0MidActivity.class);
+                ChildBean cb1 = setBeanName(name, T0MidActivity.class);
+                cb1.intOther = 1;
+                return cb1;
             case PART_A + 2:
-                ConstantsT.setAnimType(ConstantsT.AnimType.ANIM_TYPE_RECT_REVEAL);
-                return setBeanName(name, T0MidActivity.class);//
+                ChildBean cb2 = setBeanName(name, T0MidActivity.class);
+                cb2.intOther = 2;
+                return cb2;
 //            case PART_B + 0:
 //                return setBeanName(name, RvS1Activity.class);
 //            case PART_B + 1:
@@ -202,6 +205,7 @@ public class MainActivity extends AppCompatActivity {
                         if (cls == null) {
                             Toast.makeText(getApplicationContext(), "没有设置，嘿嘿！！！", Toast.LENGTH_SHORT).show();
                         } else {
+                            beforeStart(((ChildBean) obj));
                             startActivity(new Intent(getApplication(), ((ChildBean) obj).cls));
                         }
 
@@ -221,6 +225,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void beforeStart(ChildBean obj) {
+//        if(!(obj instanceof ChildBean)){
+//            return;
+//        }
+//        Log.e("type", T0MidActivity.class.getName() + "  beforeStart -- m00  " + obj.cls.getName());
+        if(obj.cls.getName().equals(T0MidActivity.class.getName())){
+            if(obj.intOther == 0){
+                ConstantsT.setAnimType(ConstantsT.AnimType.ANIM_TYPE_STRAIGHT);
+            }else if(obj.intOther == 1){
+                ConstantsT.setAnimType(ConstantsT.AnimType.ANIM_TYPE_CIRCULAR_REVEAL);
+            }else if(obj.intOther == 2){
+                ConstantsT.setAnimType(ConstantsT.AnimType.ANIM_TYPE_RECT_REVEAL);
+            }
+            Log.e("type", ConstantsT.getAnimType().toString() + " -- m00");
+        }
+    }
+
     class TypeBean {
         TypeBean(String name) {
             this.name = name;
@@ -233,6 +254,7 @@ public class MainActivity extends AppCompatActivity {
     class ChildBean {
         String name;
         Class cls;
+        int intOther;
     }
 
 

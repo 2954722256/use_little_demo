@@ -9,6 +9,7 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 
 import com.aohuan.dodo.anim.R;
 import com.aohuan.dodo.anim.utils.mrzk.controller.animationUtils.TransitionController;
+import com.aohuan.dodo.anim.utils.mrzk.controller.animationUtils.ViewAnimationCompatUtils;
 import com.aohuan.dodo.anim.utils.mrzk.controller.listener.TransitionCustomListener;
 
 import butterknife.ButterKnife;
@@ -62,8 +64,12 @@ public class T1StraActivity extends AppCompatActivity {
             public void onTransitionEnd(Animator animator) {
                 getSupportActionBar().show();
                 mFloatingActionButton.animate().setDuration(300).scaleX(1).scaleY(1);
-                ObjectAnimator mAnimator = ObjectAnimator.ofFloat(nsv, "translationY", nsv.getHeight(), 0);
-//                Animator mAnimator = ViewAnimationCompatUtils.createCircularReveal( nsv, 0, 0, nsv.getWidth() / 2, nsv.getHeight());
+
+//                Animator mAnimator = ObjectAnimator.ofFloat(nsv, "translationY", nsv.getHeight(), 0);
+////                Animator mAnimator = ViewAnimationCompatUtils.createCircularReveal( nsv, 0, 0, nsv.getWidth() / 2, nsv.getHeight());
+
+                Animator mAnimator = getTypeAnimator();
+
                 mAnimator.setDuration(300);
                 mAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
                 mAnimator.addListener(new AnimatorListenerAdapter() {
@@ -87,6 +93,25 @@ public class T1StraActivity extends AppCompatActivity {
         });
         TransitionController.getInstance().show(this, getIntent());
     }
+
+
+    public Animator getTypeAnimator() {
+        Log.e("type", ConstantsT.getAnimType().toString()+" -- ");
+        switch (ConstantsT.getAnimType()) {
+            case ANIM_TYPE_STRAIGHT:
+                return ObjectAnimator.ofFloat(nsv, "translationY", nsv.getHeight(), 0);
+
+            case ANIM_TYPE_CIRCULAR_REVEAL:
+                return ViewAnimationCompatUtils.createCircularReveal(cardview, 0, 0, cardview.getWidth() / 2, cardview.getHeight());
+
+            case ANIM_TYPE_RECT_REVEAL:
+                return ViewAnimationCompatUtils.createRectReveal(cardview, 0, cardview.getHeight(), ViewAnimationCompatUtils.RECT_TOP);
+
+            default:
+                return ObjectAnimator.ofFloat(nsv, "translationY", nsv.getHeight(), 0);
+        }
+    }
+
 
     @Override
     public void onBackPressed() {

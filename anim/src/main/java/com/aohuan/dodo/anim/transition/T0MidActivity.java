@@ -32,7 +32,7 @@ public class T0MidActivity extends AppCompatActivity {
         lv.setAdapter(new CommonAdapter<String>(this, R.layout.item_t0_list_cardview, strArray) {
             @Override
             protected void convert(ViewHolder viewHolder, String item, int position) {
-                viewHolder.setImageResource(R.id.customImage, R.drawable.euler);
+//                viewHolder.setImageResource(R.id.customImage, R.drawable.euler);
                 viewHolder.getView(R.id.cardv).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.aohuan.dodo.anim.R;
 import com.aohuan.dodo.anim.utils.mrzk.controller.animationUtils.TransitionController;
+import com.aohuan.dodo.anim.utils.mrzk.controller.animationUtils.ViewAnimationCompatUtils;
 import com.aohuan.dodo.anim.utils.mrzk.controller.listener.TransitionCustomListener;
 
 import butterknife.ButterKnife;
@@ -62,9 +63,9 @@ public class T2CircularActivity extends AppCompatActivity {
             public void onTransitionEnd(Animator animator) {
                 getSupportActionBar().show();
                 mFloatingActionButton.animate().setDuration(300).scaleX(1).scaleY(1);
-                ObjectAnimator mAnimator = ObjectAnimator.ofFloat(nsv, "translationY", nsv.getHeight(), 0);
-//                Animator mAnimator = ViewAnimationCompatUtils.createCircularReveal( nsv, 0, 0, nsv.getWidth() / 2, nsv.getHeight());
-                mAnimator.setDuration(300);
+//                ObjectAnimator mAnimator = ObjectAnimator.ofFloat(nsv, "translationY", nsv.getHeight(), 0);
+                Animator mAnimator = ViewAnimationCompatUtils.createCircularReveal(nsv, 0, 0, nsv.getWidth() / 2, nsv.getHeight());
+                mAnimator.setDuration(500);
                 mAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
                 mAnimator.addListener(new AnimatorListenerAdapter() {
                     @Override
