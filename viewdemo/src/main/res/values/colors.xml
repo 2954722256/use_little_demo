@@ -9,6 +9,8 @@
     <color name="colorPrimaryDark">#b85671</color>
     <color name="colorAccent">@android:color/black</color>
 
+    <color name="custom_imoocstyle">#eb4f38</color>
+
 
     <color name="yellow_50">#FFD11B</color>
     <color name="yellow_30">#FEA501</color>

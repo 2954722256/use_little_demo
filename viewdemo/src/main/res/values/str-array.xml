@@ -31,8 +31,9 @@
         <!-- PART 0 -->
         <item>0 系统SwipeRefreshLayout</item>
         <item>1 【暂时没有调通】鸿洋的loadmore</item>
-        <item>2 HomHomLin - PullToRefreshRecyclerView</item>
-        <item>3 xxxx</item>
+        <item>2 【版本有问题】HomHomLin - PullToRefreshRecyclerView</item>
+        <item>3 BGA 1</item>
+        <item>3 BGA 2</item>
 
     </string-array>
 

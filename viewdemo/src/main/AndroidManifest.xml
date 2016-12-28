@@ -26,6 +26,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- atuo适配 -->
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -64,8 +73,10 @@
         <activity android:name=".listabout.rv.sectioned.RvS5Activity" />
         <activity android:name=".listabout.rv.sectioned.RvS6Activity" />
         <activity android:name=".refresh.ReRv01Activity" />
-        <activity android:name=".refresh.ReRv02Activity"></activity>
-        <activity android:name=".refresh.ReRv03Activity"></activity>
+        <activity android:name=".refresh.ReRv02Activity" />
+        <activity android:name=".refresh.ReRv03Activity" />
+        <activity android:name=".refresh.ReRv05Activity" />
+        <activity android:name=".refresh.ReRv04Activity"></activity>
     </application>
 
 </manifest>

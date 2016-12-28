@@ -7,6 +7,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import com.aohuan.dodo.viewdemo.R;
 import com.zhy.adapter.recyclerview.CommonAdapter;
@@ -41,9 +42,9 @@ public class ReRv02Activity extends AppCompatActivity {
 
 
     private void init() {
-        setRefresh();
         setData();
         setRv();
+        setRefresh();
     }
 
 
@@ -107,6 +108,7 @@ public class ReRv02Activity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
+            Toast.makeText(ReRv02Activity.this, "handler", Toast.LENGTH_SHORT).show();
             if (msg.what == MSG_CODE_REFRESH) {
                 setData();
                 mSwipeRefreshWidget.setRefreshing(false);

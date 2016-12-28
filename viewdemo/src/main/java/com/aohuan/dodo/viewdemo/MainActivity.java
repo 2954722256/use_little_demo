@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.aohuan.dodo.viewdemo.listabout.listview.hy.LvHyCommonActivity;
 import com.aohuan.dodo.viewdemo.listabout.listview.hy.LvHyMutiActivity;
-import com.aohuan.dodo.viewdemo.listabout.rv.bili.RvB1Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.hy.RvHyCommonActivity;
 import com.aohuan.dodo.viewdemo.listabout.rv.hy.RvHyMutiActivity;
 import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO1Activity;
@@ -28,6 +27,9 @@ import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS4Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS5Activity;
 import com.aohuan.dodo.viewdemo.refresh.ReRv01Activity;
 import com.aohuan.dodo.viewdemo.refresh.ReRv02Activity;
+import com.aohuan.dodo.viewdemo.refresh.ReRv03Activity;
+import com.aohuan.dodo.viewdemo.refresh.ReRv04Activity;
+import com.aohuan.dodo.viewdemo.refresh.ReRv05Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -120,6 +122,12 @@ public class MainActivity extends AppCompatActivity {
                 return setBeanName(name, ReRv01Activity.class);
             case PART_R + 1:
                 return setBeanName(name, ReRv02Activity.class);
+            case PART_R + 2:
+                return setBeanName(name, ReRv03Activity.class);
+            case PART_R + 3:
+                return setBeanName(name, ReRv04Activity.class);
+            case PART_R + 4:
+                return setBeanName(name, ReRv05Activity.class);
 
         }
         return new ChildBean();
