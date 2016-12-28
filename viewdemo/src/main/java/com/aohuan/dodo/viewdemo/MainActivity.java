@@ -26,6 +26,8 @@ import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS2Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS3Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS4Activity;
 import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS5Activity;
+import com.aohuan.dodo.viewdemo.refresh.ReRv01Activity;
+import com.aohuan.dodo.viewdemo.refresh.ReRv02Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -69,9 +71,9 @@ public class MainActivity extends AppCompatActivity {
                 typeChildList.get(0).childBeanList.add(bean);
             } else if (i >= PART_A && i < PART_B) {
                 typeChildList.get(1).childBeanList.add(bean);
-            } else if (i >= PART_B && i < PART_N) {
+            } else if (i >= PART_B && i < PART_R) {
                 typeChildList.get(2).childBeanList.add(bean);
-            } else if (i >= PART_N) {
+            } else if (i >= PART_R) {
                 typeChildList.get(3).childBeanList.add(bean);
             }
         }
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 //    public static final int PART_0 = 0;
     public static final int PART_A = 4;
     public static final int PART_B = PART_A + 6;
-    public static final int PART_N = PART_B + 5;
+    public static final int PART_R = PART_B + 5;
 
 
     private ChildBean setIndexBean(int i, String name) {
@@ -114,6 +116,10 @@ public class MainActivity extends AppCompatActivity {
                 return setBeanName(name, RvS4Activity.class);
             case PART_B + 4:
                 return setBeanName(name, RvS5Activity.class);
+            case PART_R + 0:
+                return setBeanName(name, ReRv01Activity.class);
+            case PART_R + 1:
+                return setBeanName(name, ReRv02Activity.class);
 
         }
         return new ChildBean();

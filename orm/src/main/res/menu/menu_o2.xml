@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aohuan.dodo.viewdemo.MainActivity">
+    <item
+        android:id="@+id/o21"
+        android:title="add"
+        android:orderInCategory="100"
+        app:showAsAction="withText|ifRoom" />
+    <!--<item-->
+        <!--android:id="@+id/o22"-->
+        <!--android:title="delete"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="withText|ifRoom" />-->
+    <!--<item-->
+        <!--android:id="@+id/o23"-->
+        <!--android:title="HORIZONTAL"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="withText|never" />-->
+    <!--<item-->
+        <!--android:id="@+id/o24"-->
+        <!--android:title="VERTICAL"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="withText|never" />-->
+    <!--<item-->
+        <!--android:id="@+id/o25"-->
+        <!--android:title="Grid2"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="withText|never" />-->
+    <!--<item-->
+        <!--android:id="@+id/o26"-->
+        <!--android:title="GridMulti"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="withText|never" />-->
+    <!--<item-->
+        <!--android:id="@+id/o27"-->
+        <!--android:title="StaggeredGrid3"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="withText|never" />-->
+    <!--<item-->
+        <!--android:id="@+id/o28"-->
+        <!--android:title="Grid3"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="withText|never" />-->
+    <!--<item-->
+        <!--android:id="@+id/o29"-->
+        <!--android:title="Grid3"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="withText|never" />-->
+</menu>

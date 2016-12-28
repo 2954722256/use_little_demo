@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页导航的跳转名字 -->
+    <string-array name="typelist">
+
+
+        <!-- PART 0 -->
+        <item>0 Xutils</item>
+        <item>1 XXXX</item>
+        <item>2 XXXX</item>
+        <item>3 XXXX</item>
+
+
+        <!-- PART A -->
+        <!--<item>0 ANIM_TYPE_STRAIGHT </item>-->
+        <!--<item>1 ANIM_TYPE_CIRCULAR_REVEAL</item>-->
+        <!--<item>2 ANIM_TYPE_RECT_REVEAL</item>-->
+        <!--<item>3 XXXX</item>-->
+        <!--<item>4 XXXX</item>-->
+        <!--<item>5 XXXX</item>-->
+
+
+        <!-- PART B -->
+        <!--<item>0 XXXX</item>-->
+        <!--<item>1 XXXX</item>-->
+        <!--<item>2 XXXX</item>-->
+        <!--<item>3 XXXX</item>-->
+        <!--<item>4 XXXX</item>-->
+
+    </string-array>
+
+    <!-- 一级菜单 -->
+    <string-array name="typetop">
+        <!-- PART N -->
+        <item>PART 0 Xutils</item>
+    </string-array>
+
+
+
+
+</resources>

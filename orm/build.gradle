@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.aohuan.dodo.orm"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    final SUPPORT_LIBRARY_VERSION = '25.0.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+
+    compile 'com.zhy:base-adapter:3.0.3'    //鸿洋 非rv的adapter
+    compile 'com.zhy:base-rvadapter:3.0.3'  //鸿洋 rv的adapter
+
+    compile 'com.jakewharton:butterknife:5.1.1'     //butterknife 注解
+
+    compile 'org.xutils:xutils:3.3.40'
+//    compile 'org.xutils:xutils:3.2.2'
+//    compile 'org.xutils:xutils:3.1.24'
+}

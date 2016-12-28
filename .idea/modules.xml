@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/coordinator/coordinator.iml" filepath="$PROJECT_DIR$/coordinator/coordinator.iml" />
       <module fileurl="file://$PROJECT_DIR$/eventbus3test/eventbus3test.iml" filepath="$PROJECT_DIR$/eventbus3test/eventbus3test.iml" />
       <module fileurl="file://$PROJECT_DIR$/javacode/javacode.iml" filepath="$PROJECT_DIR$/javacode/javacode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orm/orm.iml" filepath="$PROJECT_DIR$/orm/orm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quickside/quickside.iml" filepath="$PROJECT_DIR$/quickside/quickside.iml" />
       <module fileurl="file://$PROJECT_DIR$/rx/rx.iml" filepath="$PROJECT_DIR$/rx/rx.iml" />
       <module fileurl="file://$PROJECT_DIR$/stickynav/stickynav.iml" filepath="$PROJECT_DIR$/stickynav/stickynav.iml" />
       <module fileurl="file://$PROJECT_DIR$/svg/svg.iml" filepath="$PROJECT_DIR$/svg/svg.iml" />

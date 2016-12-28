@@ -62,7 +62,10 @@
         <activity android:name=".listabout.rv.sectioned.RvS3Activity" />
         <activity android:name=".listabout.rv.sectioned.RvS4Activity" />
         <activity android:name=".listabout.rv.sectioned.RvS5Activity" />
-        <activity android:name=".listabout.rv.sectioned.RvS6Activity"></activity>
+        <activity android:name=".listabout.rv.sectioned.RvS6Activity" />
+        <activity android:name=".refresh.ReRv01Activity" />
+        <activity android:name=".refresh.ReRv02Activity"></activity>
+        <activity android:name=".refresh.ReRv03Activity"></activity>
     </application>
 
 </manifest>

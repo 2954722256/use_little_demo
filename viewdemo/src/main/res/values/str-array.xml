@@ -28,6 +28,12 @@
         <item>3 Expandable Grid header in SectionedRecyclerViewAdapter</item>
         <item>4 MultiType in SectionedRecyclerViewAdapter</item>
 
+        <!-- PART 0 -->
+        <item>0 系统SwipeRefreshLayout</item>
+        <item>1 【暂时没有调通】鸿洋的loadmore</item>
+        <item>2 HomHomLin - PullToRefreshRecyclerView</item>
+        <item>3 xxxx</item>
+
     </string-array>
 
     <!-- 一级菜单 -->
@@ -36,7 +42,7 @@
         <item>PART 0 鸿洋Adapter简单使用</item>
         <item>PART 1 RecycleView简单使用</item>
         <item>PART 2 SectionedRecyclerViewAdapter简单使用</item>
-        <!--<item>PART xx</item>-->
+        <item>PART 3 刷新相关</item>
     </string-array>
 
 
