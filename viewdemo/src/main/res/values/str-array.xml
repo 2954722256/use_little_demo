@@ -29,11 +29,19 @@
         <item>4 MultiType in SectionedRecyclerViewAdapter</item>
 
         <!-- PART 0 -->
-        <item>0 系统SwipeRefreshLayout</item>
+        <item>0 系统 SwipeRefreshLayout</item>
         <item>1 【暂时没有调通】鸿洋的loadmore</item>
         <item>2 【版本有问题】HomHomLin - PullToRefreshRecyclerView</item>
         <item>3 BGA 1</item>
-        <item>3 BGA 2</item>
+        <item>4 BGA 2 浩洋的封装</item>
+        <item>5 BGA 3 type设置</item>
+
+        <!-- PART 0 -->
+        <item>0 系统 SwipeRefreshLayout </item>
+        <item>1 zzzz</item>
+        <item>1 zzzz</item>
+        <item>1 zzzz</item>
+        <item>1 zzzz</item>
 
     </string-array>
 
@@ -44,9 +52,7 @@
         <item>PART 1 RecycleView简单使用</item>
         <item>PART 2 SectionedRecyclerViewAdapter简单使用</item>
         <item>PART 3 刷新相关</item>
+        <item>PART 4 刷新 和 Coordiate</item>
     </string-array>
-
-
-
 
 </resources>

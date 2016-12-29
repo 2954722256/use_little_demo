@@ -76,7 +76,13 @@
         <activity android:name=".refresh.ReRv02Activity" />
         <activity android:name=".refresh.ReRv03Activity" />
         <activity android:name=".refresh.ReRv05Activity" />
-        <activity android:name=".refresh.ReRv04Activity"></activity>
+        <activity android:name=".refresh.ReRv04Activity" />
+        <activity
+            android:name=".refresh.ReRv06Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".refresh_coordiate.ReCo01Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

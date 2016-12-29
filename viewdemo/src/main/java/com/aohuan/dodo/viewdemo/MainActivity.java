@@ -30,6 +30,8 @@ import com.aohuan.dodo.viewdemo.refresh.ReRv02Activity;
 import com.aohuan.dodo.viewdemo.refresh.ReRv03Activity;
 import com.aohuan.dodo.viewdemo.refresh.ReRv04Activity;
 import com.aohuan.dodo.viewdemo.refresh.ReRv05Activity;
+import com.aohuan.dodo.viewdemo.refresh.ReRv06Activity;
+import com.aohuan.dodo.viewdemo.refresh_coordiate.ReCo01Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -75,16 +77,27 @@ public class MainActivity extends AppCompatActivity {
                 typeChildList.get(1).childBeanList.add(bean);
             } else if (i >= PART_B && i < PART_R) {
                 typeChildList.get(2).childBeanList.add(bean);
-            } else if (i >= PART_R) {
+            } else if (i >= PART_R  && i < PART_RC) {
                 typeChildList.get(3).childBeanList.add(bean);
+            } else if (i >= PART_RC){
+                typeChildList.get(4).childBeanList.add(bean);
             }
         }
     }
 
-//    public static final int PART_0 = 0;
-    public static final int PART_A = 4;
-    public static final int PART_B = PART_A + 6;
-    public static final int PART_R = PART_B + 5;
+    public static final int NUM_0 = 4;
+    public static final int NUM_A = 6;
+    public static final int NUM_B = 5;
+    public static final int NUM_R = 6;
+    public static final int NUM_RC = 6;
+
+
+    public static final int PART_0 = 0;
+    public static final int PART_A = PART_0 + NUM_0;
+    public static final int PART_B = PART_A + NUM_A;
+    public static final int PART_R = PART_B + NUM_B;
+    public static final int PART_RC = PART_R + NUM_R;
+
 
 
     private ChildBean setIndexBean(int i, String name) {
@@ -101,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
             case 3:
                 return setBeanName(name, RvHyMutiActivity.class);
 
+            ////===========PART A
             case PART_A + 0:
                 return setBeanName(name, RvO1Activity.class);
             case PART_A + 1:
@@ -108,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
             case PART_A + 2:
                 return setBeanName(name, RvO3Activity.class);
 
+            ////===========PART B
             case PART_B + 0:
                 return setBeanName(name, RvS1Activity.class);
             case PART_B + 1:
@@ -118,6 +133,8 @@ public class MainActivity extends AppCompatActivity {
                 return setBeanName(name, RvS4Activity.class);
             case PART_B + 4:
                 return setBeanName(name, RvS5Activity.class);
+
+            ////===========PART R
             case PART_R + 0:
                 return setBeanName(name, ReRv01Activity.class);
             case PART_R + 1:
@@ -128,6 +145,12 @@ public class MainActivity extends AppCompatActivity {
                 return setBeanName(name, ReRv04Activity.class);
             case PART_R + 4:
                 return setBeanName(name, ReRv05Activity.class);
+            case PART_R + 5:
+                return setBeanName(name, ReRv06Activity.class);
+
+            ////===========PART RC
+            case PART_RC + 0:
+                return setBeanName(name, ReCo01Activity.class);
 
         }
         return new ChildBean();
