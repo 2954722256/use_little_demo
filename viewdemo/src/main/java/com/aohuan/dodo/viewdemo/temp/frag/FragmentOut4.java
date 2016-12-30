@@ -58,11 +58,10 @@ public class FragmentOut4 extends Fragment {
 
     private void initFrag() {
         for (int i = 0; i < 4; i++) {
-            SocetyClassifyFragment homePageFrg = new SocetyClassifyFragment();
-//            Log.e("haha", "homePageFrg:::" + homePageFrg.hashCode());
-            Bundle b = new Bundle();
-            b.putString("sort", titlePreName + i + "");
-            homePageFrg.setArguments(b);
+            ContentFragment homePageFrg = new ContentFragment();
+//            Bundle b = new Bundle();
+//            b.putString("sort", titlePreName + i + "");
+//            homePageFrg.setArguments(b);
             fagList.add(homePageFrg);
         }
     }

@@ -30,12 +30,15 @@ public class SocetyClassifyFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-//        initView();
     }
 
     private void initView() {
+        initTitle();
+
+    }
+
+    private void initTitle(){
         mSort = getArguments().getString("sort");
-//        Log.e("haha", "mSort:::" + mSort);
         mTest.setText(mSort);
     }
 

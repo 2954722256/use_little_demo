@@ -18,12 +18,10 @@ public class NoScrollViewPager2 extends ViewPager {
         super(context, attrs);
     }
 
-
 //    @Override
 //    public void scrollTo(int x, int y) {
 //        super.scrollTo(x, y);
 //    }
-//
 //
 //    @Override
 //    public void setCurrentItem(int item, boolean smoothScroll) {
