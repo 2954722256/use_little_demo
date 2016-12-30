@@ -25,8 +25,6 @@ public class TabStrip04Activity extends AppCompatActivity {
     TabLayout tabMain;
     @InjectView(R.id.m_viewpager)
     ViewPager mViewpager;
-    @InjectView(R.id.m_parent_view)
-    LinearLayout mParentView;
 
     private List<Fragment> fagList = new ArrayList<>();
 
@@ -54,7 +52,6 @@ public class TabStrip04Activity extends AppCompatActivity {
     private void initPager() {
         mViewpager.setAdapter(new MyAdapter(getSupportFragmentManager()));
         tabMain.setupWithViewPager(mViewpager);
-
         for(int i=0; i<mViewpager.getAdapter().getCount(); i++){
             tabMain.getTabAt(i).setText(mViewpager.getAdapter().getPageTitle(i));
         }

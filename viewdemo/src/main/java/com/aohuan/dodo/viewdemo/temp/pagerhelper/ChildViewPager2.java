@@ -21,10 +21,12 @@ public class ChildViewPager2 extends ViewPager {
         super(context, attrs);
     }
 
+    long num = 0;
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         int curPosition;
 
+        Log.i(TAG, "curPosition:=" + num++);
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 getParent().requestDisallowInterceptTouchEvent(true);

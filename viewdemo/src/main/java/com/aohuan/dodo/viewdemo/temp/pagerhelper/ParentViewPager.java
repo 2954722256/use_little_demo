@@ -18,9 +18,17 @@ public class ParentViewPager extends ViewPager {
         super(context);
     }
 
+//    @Override
+//    protected boolean canScroll(View v, boolean checkV, int dx, int x, int y) {
+//        // return super.canScroll(v, checkV, dx, x, y);
+//        return true;// /////////////////这是重点，意思就是ViewPager中的东东都可以滚动
+//    }
+
     @Override
     protected boolean canScroll(View v, boolean checkV, int dx, int x, int y) {
-        // return super.canScroll(v, checkV, dx, x, y);
-        return true;// /////////////////这是重点，意思就是ViewPager中的东东都可以滚动
+        if (v != this && v instanceof ViewPager) {
+            return true;
+        }
+        return super.canScroll(v, checkV, dx, x, y);
     }
 }

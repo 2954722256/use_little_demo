@@ -35,7 +35,7 @@ public class SocetyClassifyFragment extends Fragment {
 
     private void initView() {
         mSort = getArguments().getString("sort");
-        Log.e("haha", "mSort:::" + mSort);
+//        Log.e("haha", "mSort:::" + mSort);
         mTest.setText(mSort);
     }
 
