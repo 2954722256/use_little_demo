@@ -12,7 +12,7 @@
         <item>3 鸿洋多Item的RecycleView</item>
 
 
-        <!-- PART A -->
+        <!-- PART 1 -->
         <item>0 Rv的LinearLayoutManager纵向动态高度</item>
         <item>1 Rv的LinearLayoutManager各种LayoutManager</item>
         <item>2 Rv的LinearLayoutManager横向xxx</item>
@@ -21,14 +21,14 @@
         <item>5 Rv的</item>
 
 
-        <!-- PART B -->
+        <!-- PART 2 -->
         <item>0 header List in SectionedRecyclerViewAdapter</item>
         <item>1 headerAndFooter List in SectionedRecyclerViewAdapter</item>
         <item>2 Expandable List in SectionedRecyclerViewAdapter</item>
         <item>3 Expandable Grid header in SectionedRecyclerViewAdapter</item>
         <item>4 MultiType in SectionedRecyclerViewAdapter</item>
 
-        <!-- PART 0 -->
+        <!-- PART 3 -->
         <item>0 系统 SwipeRefreshLayout</item>
         <item>1 【暂时没有调通】鸿洋的loadmore</item>
         <item>2 【版本有问题】HomHomLin - PullToRefreshRecyclerView</item>
@@ -36,12 +36,22 @@
         <item>4 BGA 2 浩洋的封装</item>
         <item>5 BGA 3 type设置</item>
 
-        <!-- PART 0 -->
-        <item>0 系统 SwipeRefreshLayout </item>
+        <!-- PART 4 -->
+        <item>0 系统 SwipeRefreshLayout 嵌套 CoordinatorLayout </item>
         <item>1 zzzz</item>
-        <item>1 zzzz</item>
-        <item>1 zzzz</item>
-        <item>1 zzzz</item>
+        <item>2 zzzz</item>
+        <item>3 zzzz</item>
+        <item>4 zzzz</item>
+        <item>5 zzzz</item>
+
+
+        <!-- PART 5 -->
+        <item>0 viewpager and PagerSlidingTabStrip </item>
+        <item>1 TabLayout</item>
+        <item>2 child ViewPager in RadioGroup ViewPager</item>
+        <item>3 child ViewPager in TabLayout （）</item>
+        <item>4 zzzz</item>
+        <item>5 zzzz</item>
 
     </string-array>
 
@@ -53,6 +63,8 @@
         <item>PART 2 SectionedRecyclerViewAdapter简单使用</item>
         <item>PART 3 刷新相关</item>
         <item>PART 4 刷新 和 Coordiate</item>
+        <item>PART 5 tabstrip 一些导航类似的</item>
+        <item>PART 6 xxxx Temp</item>
     </string-array>
 
 </resources>

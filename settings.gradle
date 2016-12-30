@@ -1,1 +1,1 @@
-include ':app', ':eventbus3test', ':annotation_test', ':bottomnavigation', ':stickynav', ':coordinator', ':svg', ':javacode', ':viewdemo', ':rx', ':anim', ':up5.0', ':quickside', ':orm'
+include ':app', ':eventbus3test', ':annotation_test', ':bottomnavigation', ':stickynav', ':coordinator', ':svg', ':javacode', ':viewdemo', ':rx', ':anim', ':up5.0', ':quickside', ':orm', ':commonutils'

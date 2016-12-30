@@ -10,6 +10,7 @@
     <color name="colorAccent">@android:color/black</color>
 
     <color name="custom_imoocstyle">#eb4f38</color>
+    <color name="transparent">#00000000</color>
 
 
     <color name="yellow_50">#FFD11B</color>

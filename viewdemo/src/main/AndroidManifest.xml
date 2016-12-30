@@ -83,6 +83,11 @@
         <activity
             android:name=".refresh_coordiate.ReCo01Activity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".refresh_coordiate.ReCo02Activity" />
+        <activity android:name=".temp.TabStrip01Activity" />
+        <activity android:name=".temp.TabStrip02Activity" />
+        <activity android:name=".temp.TabStrip03Activity" />
+        <activity android:name=".temp.TabStrip04Activity" android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

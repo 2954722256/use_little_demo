@@ -58,11 +58,9 @@ public class ReCo01Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         tv1.setText("type : no");
 
-
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-
                 if (verticalOffset >= 0) {
                     mSwipeRefreshWidget.setEnabled(true);
                 } else {

@@ -32,6 +32,10 @@ import com.aohuan.dodo.viewdemo.refresh.ReRv04Activity;
 import com.aohuan.dodo.viewdemo.refresh.ReRv05Activity;
 import com.aohuan.dodo.viewdemo.refresh.ReRv06Activity;
 import com.aohuan.dodo.viewdemo.refresh_coordiate.ReCo01Activity;
+import com.aohuan.dodo.viewdemo.temp.TabStrip01Activity;
+import com.aohuan.dodo.viewdemo.temp.TabStrip02Activity;
+import com.aohuan.dodo.viewdemo.temp.TabStrip03Activity;
+import com.aohuan.dodo.viewdemo.temp.TabStrip04Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -79,8 +83,10 @@ public class MainActivity extends AppCompatActivity {
                 typeChildList.get(2).childBeanList.add(bean);
             } else if (i >= PART_R  && i < PART_RC) {
                 typeChildList.get(3).childBeanList.add(bean);
-            } else if (i >= PART_RC){
+            } else if (i >= PART_RC && i < PART_T){
                 typeChildList.get(4).childBeanList.add(bean);
+            }else if (i >= PART_T){
+                typeChildList.get(5).childBeanList.add(bean);
             }
         }
     }
@@ -90,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int NUM_B = 5;
     public static final int NUM_R = 6;
     public static final int NUM_RC = 6;
+    public static final int NUM_T = 6;
 
 
     public static final int PART_0 = 0;
@@ -97,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int PART_B = PART_A + NUM_A;
     public static final int PART_R = PART_B + NUM_B;
     public static final int PART_RC = PART_R + NUM_R;
+    public static final int PART_T = PART_RC + NUM_RC;
 
 
 
@@ -151,6 +159,16 @@ public class MainActivity extends AppCompatActivity {
             ////===========PART RC
             case PART_RC + 0:
                 return setBeanName(name, ReCo01Activity.class);
+
+            ////===========PART T
+            case PART_T + 0:
+                return setBeanName(name, TabStrip01Activity.class);
+            case PART_T + 1:
+                return setBeanName(name, TabStrip02Activity.class);
+            case PART_T + 2:
+                return setBeanName(name, TabStrip03Activity.class);
+            case PART_T + 3:
+                return setBeanName(name, TabStrip04Activity.class);
 
         }
         return new ChildBean();

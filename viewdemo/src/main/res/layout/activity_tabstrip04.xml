@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/m_parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_main"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#fff"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#fff"
+            app:tabTextColor="#97c8f4"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:background="#1e8ae8"/>
+
+        <include layout="@layout/view_min_division" />
+
+        <!--<android.support.v4.view.ViewPager-->
+        <com.aohuan.dodo.viewdemo.temp.pagerhelper.ParentViewPager
+
+
+            android:id="@+id/m_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>
