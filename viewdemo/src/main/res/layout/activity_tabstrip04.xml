@@ -13,7 +13,7 @@
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tab_main"
-            android:layout_width="180dp"
+            android:layout_width="500px"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="#1e8ae8"
@@ -28,7 +28,7 @@
 
         <!--<android.support.v4.view.ViewPager-->
         <!--<com.aohuan.dodo.viewdemo.temp.pagerhelper.ParentViewPager-->
-        <com.aohuan.dodo.viewdemo.temp.pagerhelper.NoScrollViewPager2
+        <com.aohuan.dodo.viewdemo.tab.pagerhelper.NoScrollViewPager2
             android:id="@+id/m_viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

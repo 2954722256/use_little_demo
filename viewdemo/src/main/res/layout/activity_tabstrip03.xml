@@ -27,7 +27,7 @@
 
     </RadioGroup>
 
-    <com.aohuan.dodo.viewdemo.temp.pagerhelper.NoScrollViewPager
+    <com.aohuan.dodo.viewdemo.tab.pagerhelper.NoScrollViewPager
         android:id="@+id/vp_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -32,10 +32,11 @@ import com.aohuan.dodo.viewdemo.refresh.ReRv04Activity;
 import com.aohuan.dodo.viewdemo.refresh.ReRv05Activity;
 import com.aohuan.dodo.viewdemo.refresh.ReRv06Activity;
 import com.aohuan.dodo.viewdemo.refresh_coordiate.ReCo01Activity;
-import com.aohuan.dodo.viewdemo.temp.TabStrip01Activity;
-import com.aohuan.dodo.viewdemo.temp.TabStrip02Activity;
-import com.aohuan.dodo.viewdemo.temp.TabStrip03Activity;
-import com.aohuan.dodo.viewdemo.temp.TabStrip04Activity;
+import com.aohuan.dodo.viewdemo.tab.TabStrip01Activity;
+import com.aohuan.dodo.viewdemo.tab.TabStrip02Activity;
+import com.aohuan.dodo.viewdemo.tab.TabStrip03Activity;
+import com.aohuan.dodo.viewdemo.tab.TabStrip04Activity;
+import com.aohuan.dodo.viewdemo.tab.TabStrip05Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -169,7 +170,8 @@ public class MainActivity extends AppCompatActivity {
                 return setBeanName(name, TabStrip03Activity.class);
             case PART_T + 3:
                 return setBeanName(name, TabStrip04Activity.class);
-
+            case PART_T + 4:
+                return setBeanName(name, TabStrip05Activity.class);
         }
         return new ChildBean();
     }

@@ -112,5 +112,6 @@
     <orderEntry type="library" exported="" name="support-vector-drawable-25.0.0" level="project" />
     <orderEntry type="library" exported="" name="base-rvadapter-3.0.3" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-25.0.0" level="project" />
+    <orderEntry type="module" module-name="_common_utils" exported="" />
   </component>
 </module>

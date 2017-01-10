@@ -50,7 +50,7 @@
         <item>1 TabLayout</item>
         <item>2 child ViewPager in RadioGroup ViewPager</item>
         <item>3 child ViewPager in TabLayout （）</item>
-        <item>4 zzzz</item>
+        <item>4 HorizontalListView in ViewPager </item>
         <item>5 zzzz</item>
 
     </string-array>

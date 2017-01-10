@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/_common_utils/_common_utils.iml" filepath="$PROJECT_DIR$/_common_utils/_common_utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/anim/anim.iml" filepath="$PROJECT_DIR$/anim/anim.iml" />
       <module fileurl="file://$PROJECT_DIR$/annotation_test/annotation_test.iml" filepath="$PROJECT_DIR$/annotation_test/annotation_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bottomnavigation/bottomnavigation.iml" filepath="$PROJECT_DIR$/bottomnavigation/bottomnavigation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commonutils/commonutils.iml" filepath="$PROJECT_DIR$/commonutils/commonutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/coordinator/coordinator.iml" filepath="$PROJECT_DIR$/coordinator/coordinator.iml" />
       <module fileurl="file://$PROJECT_DIR$/eventbus3test/eventbus3test.iml" filepath="$PROJECT_DIR$/eventbus3test/eventbus3test.iml" />
       <module fileurl="file://$PROJECT_DIR$/javacode/javacode.iml" filepath="$PROJECT_DIR$/javacode/javacode.iml" />
       <module fileurl="file://$PROJECT_DIR$/orm/orm.iml" filepath="$PROJECT_DIR$/orm/orm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/player/player.iml" filepath="$PROJECT_DIR$/player/player.iml" />
       <module fileurl="file://$PROJECT_DIR$/quickside/quickside.iml" filepath="$PROJECT_DIR$/quickside/quickside.iml" />
       <module fileurl="file://$PROJECT_DIR$/rx/rx.iml" filepath="$PROJECT_DIR$/rx/rx.iml" />
       <module fileurl="file://$PROJECT_DIR$/stickynav/stickynav.iml" filepath="$PROJECT_DIR$/stickynav/stickynav.iml" />

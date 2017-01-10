@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200px"
+    android:background="@drawable/dodo_se_pop_bg"
+    android:layout_height="270px">
+    <ImageView
+        android:src="@drawable/euler"
+        android:gravity="center"
+        android:layout_width="180px"
+        android:scaleType="centerCrop"
+        android:layout_height="180px"
+        android:background="@drawable/euler"/>
+    <TextView
+        android:id="@+id/teach_item_name"
+        android:text="text"
+        android:maxLines="3"
+        android:layout_width="180px"
+        android:layout_height="80px" />
+
+</LinearLayout>

@@ -9,15 +9,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/_common_utils" />
             <option value="$PROJECT_DIR$/anim" />
             <option value="$PROJECT_DIR$/annotation_test" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bottomnavigation" />
-            <option value="$PROJECT_DIR$/commonutils" />
             <option value="$PROJECT_DIR$/coordinator" />
             <option value="$PROJECT_DIR$/eventbus3test" />
             <option value="$PROJECT_DIR$/javacode" />
             <option value="$PROJECT_DIR$/orm" />
+            <option value="$PROJECT_DIR$/player" />
             <option value="$PROJECT_DIR$/quickside" />
             <option value="$PROJECT_DIR$/rx" />
             <option value="$PROJECT_DIR$/stickynav" />
