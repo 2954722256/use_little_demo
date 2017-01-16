@@ -90,7 +90,10 @@
         <activity
             android:name=".tab.TabStrip04Activity"
             android:theme="@style/AppTheme.AutoNoActionBar" />
-        <activity android:name=".tab.TabStrip05Activity" android:theme="@style/AppTheme.AutoNoActionBar"/>
+        <activity
+            android:name=".tab.TabStrip05Activity"
+            android:theme="@style/AppTheme.AutoNoActionBar" />
+        <activity android:name=".uni.Uni01Activity" android:theme="@style/AppTheme.AutoNoActionBar"/>
     </application>
 
 </manifest>

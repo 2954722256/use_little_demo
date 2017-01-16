@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:text="hello1"
+            android:drawableBottom="@drawable/selector_tab_bg_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/BottomTabStyle"
+            android:text="hello2"
+            android:drawableBottom="@drawable/selector_tab_bg_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_news2"
+            style="@style/BottomTabStyle"
+            android:text="hello3"
+            android:drawableBottom="@drawable/selector_tab_bg_color"/>
+
+    </RadioGroup>
+
+    <com.aohuan.dodo.viewdemo.tab.pagerhelper.NoScrollViewPager
+        android:id="@+id/m_viewpager"
+        android:layout_above="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

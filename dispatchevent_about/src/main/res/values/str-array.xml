@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页导航的跳转名字 -->
+    <string-array name="typelist">
+
+
+        <!-- PART 0 -->
+        <item>0 ViewGroup 嵌套 View </item>
+        <item>1 xxxxx</item>
+        <item>2 xxxxx</item>
+        <item>3 xxxxx</item>
+
+
+        <!-- PART 1 -->
+        <item>0 xxxxx</item>
+        <item>1 xxxxx</item>
+        <item>2 xxxxx</item>
+        <item>3 xxxxx</item>
+        <item>4 xxxxx</item>
+        <item>5 xxxxx</item>
+
+
+    </string-array>
+
+    <!-- 一级菜单 -->
+    <string-array name="typetop">
+        <!-- PART N -->
+        <item>PART 0 事件分发理解</item>
+        <item>PART 1 xxxxx</item>
+        <item>PART 2 xxxxx</item>
+        <item>PART 3 xxxxx</item>
+        <item>PART 4 xxxxx</item>
+        <item>PART 5 xxxxx</item>
+    </string-array>
+
+</resources>

@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bottomnavigation" />
             <option value="$PROJECT_DIR$/coordinator" />
+            <option value="$PROJECT_DIR$/dispatchevent_about" />
             <option value="$PROJECT_DIR$/eventbus3test" />
             <option value="$PROJECT_DIR$/javacode" />
             <option value="$PROJECT_DIR$/orm" />

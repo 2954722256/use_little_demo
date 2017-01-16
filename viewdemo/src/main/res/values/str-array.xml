@@ -53,6 +53,9 @@
         <item>4 HorizontalListView in ViewPager </item>
         <item>5 zzzz</item>
 
+        <!-- PART 6 -->
+        <item>0 AAAA </item>
+
     </string-array>
 
     <!-- 一级菜单 -->
@@ -64,7 +67,8 @@
         <item>PART 3 刷新相关</item>
         <item>PART 4 刷新 和 Coordiate</item>
         <item>PART 5 tabstrip 一些导航类似的</item>
-        <item>PART 6 xxxx Temp</item>
+        <item>PART 6 Uni 一些ui项目的</item>
+        <item>PART 7 xxxx Temp</item>
     </string-array>
 
 </resources>

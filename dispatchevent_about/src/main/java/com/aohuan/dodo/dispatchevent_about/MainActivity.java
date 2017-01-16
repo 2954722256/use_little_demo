@@ -1,9 +1,9 @@
-package com.aohuan.dodo.viewdemo;
+package com.aohuan.dodo.dispatchevent_about;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,36 +13,12 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.aohuan.dodo.viewdemo.listabout.listview.hy.LvHyCommonActivity;
-import com.aohuan.dodo.viewdemo.listabout.listview.hy.LvHyMutiActivity;
-import com.aohuan.dodo.viewdemo.listabout.rv.hy.RvHyCommonActivity;
-import com.aohuan.dodo.viewdemo.listabout.rv.hy.RvHyMutiActivity;
-import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO1Activity;
-import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO2Activity;
-import com.aohuan.dodo.viewdemo.listabout.rv.other.RvO3Activity;
-import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS1Activity;
-import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS2Activity;
-import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS3Activity;
-import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS4Activity;
-import com.aohuan.dodo.viewdemo.listabout.rv.sectioned.RvS5Activity;
-import com.aohuan.dodo.viewdemo.refresh.ReRv01Activity;
-import com.aohuan.dodo.viewdemo.refresh.ReRv02Activity;
-import com.aohuan.dodo.viewdemo.refresh.ReRv03Activity;
-import com.aohuan.dodo.viewdemo.refresh.ReRv04Activity;
-import com.aohuan.dodo.viewdemo.refresh.ReRv05Activity;
-import com.aohuan.dodo.viewdemo.refresh.ReRv06Activity;
-import com.aohuan.dodo.viewdemo.refresh_coordiate.ReCo01Activity;
-import com.aohuan.dodo.viewdemo.tab.TabStrip01Activity;
-import com.aohuan.dodo.viewdemo.tab.TabStrip02Activity;
-import com.aohuan.dodo.viewdemo.tab.TabStrip03Activity;
-import com.aohuan.dodo.viewdemo.tab.TabStrip04Activity;
-import com.aohuan.dodo.viewdemo.tab.TabStrip05Activity;
-import com.aohuan.dodo.viewdemo.uni.Uni01Activity;
+import com.aohuan.dodo.dispatchevent_about.dispatch_group.A01Activity;
+import com.aohuan.dodo.dispatchevent_about.dummy_demo.D01Activity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     List<String> mStringArrayList;  //所有的字符，这里为了方便，没有分组
     List<String> mStringTopList;    //对应的top类型的list
 
-//    ArrayList<>
 
     ArrayList<TypeBean> typeChildList = new ArrayList<>();//对应bean的list
 
@@ -119,66 +94,66 @@ public class MainActivity extends AppCompatActivity {
         switch (i) {
             ////===========PART 1
             case 0:
-                return setBeanName(name, LvHyCommonActivity.class);
-            case 1:
-                return setBeanName(name, LvHyMutiActivity.class);
-            case 2:
-                return setBeanName(name, RvHyCommonActivity.class);
-            case 3:
-                return setBeanName(name, RvHyMutiActivity.class);
-
+                return setBeanName(name, A01Activity.class);
+//            case 1:
+//                return setBeanName(name, LvHyMutiActivity.class);
+//            case 2:
+//                return setBeanName(name, RvHyCommonActivity.class);
+//            case 3:
+//                return setBeanName(name, RvHyMutiActivity.class);
+//
             ////===========PART A
             case PART_A + 0:
-                return setBeanName(name, RvO1Activity.class);
-            case PART_A + 1:
-                return setBeanName(name, RvO2Activity.class);
-            case PART_A + 2:
-                return setBeanName(name, RvO3Activity.class);
-
-            ////===========PART B
-            case PART_B + 0:
-                return setBeanName(name, RvS1Activity.class);
-            case PART_B + 1:
-                return setBeanName(name, RvS2Activity.class);
-            case PART_B + 2:
-                return setBeanName(name, RvS3Activity.class);
-            case PART_B + 3:
-                return setBeanName(name, RvS4Activity.class);
-            case PART_B + 4:
-                return setBeanName(name, RvS5Activity.class);
-
-            ////===========PART R
-            case PART_R + 0:
-                return setBeanName(name, ReRv01Activity.class);
-            case PART_R + 1:
-                return setBeanName(name, ReRv02Activity.class);
-            case PART_R + 2:
-                return setBeanName(name, ReRv03Activity.class);
-            case PART_R + 3:
-                return setBeanName(name, ReRv04Activity.class);
-            case PART_R + 4:
-                return setBeanName(name, ReRv05Activity.class);
-            case PART_R + 5:
-                return setBeanName(name, ReRv06Activity.class);
-
-            ////===========PART RC
-            case PART_RC + 0:
-                return setBeanName(name, ReCo01Activity.class);
-
-            ////===========PART T
-            case PART_T + 0:
-                return setBeanName(name, TabStrip01Activity.class);
-            case PART_T + 1:
-                return setBeanName(name, TabStrip02Activity.class);
-            case PART_T + 2:
-                return setBeanName(name, TabStrip03Activity.class);
-            case PART_T + 3:
-                return setBeanName(name, TabStrip04Activity.class);
-            case PART_T + 4:
-                return setBeanName(name, TabStrip05Activity.class);
-
-            case PART_U + 0:
-                return setBeanName(name, Uni01Activity.class);
+                return setBeanName(name, D01Activity.class);
+//            case PART_A + 1:
+//                return setBeanName(name, RvO2Activity.class);
+//            case PART_A + 2:
+//                return setBeanName(name, RvO3Activity.class);
+//
+//            ////===========PART B
+//            case PART_B + 0:
+//                return setBeanName(name, RvS1Activity.class);
+//            case PART_B + 1:
+//                return setBeanName(name, RvS2Activity.class);
+//            case PART_B + 2:
+//                return setBeanName(name, RvS3Activity.class);
+//            case PART_B + 3:
+//                return setBeanName(name, RvS4Activity.class);
+//            case PART_B + 4:
+//                return setBeanName(name, RvS5Activity.class);
+//
+//            ////===========PART R
+//            case PART_R + 0:
+//                return setBeanName(name, ReRv01Activity.class);
+//            case PART_R + 1:
+//                return setBeanName(name, ReRv02Activity.class);
+//            case PART_R + 2:
+//                return setBeanName(name, ReRv03Activity.class);
+//            case PART_R + 3:
+//                return setBeanName(name, ReRv04Activity.class);
+//            case PART_R + 4:
+//                return setBeanName(name, ReRv05Activity.class);
+//            case PART_R + 5:
+//                return setBeanName(name, ReRv06Activity.class);
+//
+//            ////===========PART RC
+//            case PART_RC + 0:
+//                return setBeanName(name, ReCo01Activity.class);
+//
+//            ////===========PART T
+//            case PART_T + 0:
+//                return setBeanName(name, TabStrip01Activity.class);
+//            case PART_T + 1:
+//                return setBeanName(name, TabStrip02Activity.class);
+//            case PART_T + 2:
+//                return setBeanName(name, TabStrip03Activity.class);
+//            case PART_T + 3:
+//                return setBeanName(name, TabStrip04Activity.class);
+//            case PART_T + 4:
+//                return setBeanName(name, TabStrip05Activity.class);
+//
+//            case PART_U + 0:
+//                return setBeanName(name, Uni01Activity.class);
 
         }
         return new ChildBean();
@@ -286,7 +261,6 @@ public class MainActivity extends AppCompatActivity {
             textView.setTextColor(Color.BLACK);
             return textView;
         }
-
     }
 
     class TypeBean {
@@ -302,4 +276,7 @@ public class MainActivity extends AppCompatActivity {
         String name;
         Class cls;
     }
+
+
+
 }
