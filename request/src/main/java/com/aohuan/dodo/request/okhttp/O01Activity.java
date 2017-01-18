@@ -18,7 +18,6 @@ import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 
 import java.io.IOException;
-
 import butterknife.InjectView;
 import butterknife.OnClick;
 import okhttp3.Call;
