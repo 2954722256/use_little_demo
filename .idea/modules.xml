@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/dispatchevent_about/dispatchevent_about.iml" filepath="$PROJECT_DIR$/dispatchevent_about/dispatchevent_about.iml" />
       <module fileurl="file://$PROJECT_DIR$/eventbus3test/eventbus3test.iml" filepath="$PROJECT_DIR$/eventbus3test/eventbus3test.iml" />
       <module fileurl="file://$PROJECT_DIR$/javacode/javacode.iml" filepath="$PROJECT_DIR$/javacode/javacode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/middleware/middleware.iml" filepath="$PROJECT_DIR$/middleware/middleware.iml" />
       <module fileurl="file://$PROJECT_DIR$/orm/orm.iml" filepath="$PROJECT_DIR$/orm/orm.iml" />
       <module fileurl="file://$PROJECT_DIR$/player/player.iml" filepath="$PROJECT_DIR$/player/player.iml" />
       <module fileurl="file://$PROJECT_DIR$/quickside/quickside.iml" filepath="$PROJECT_DIR$/quickside/quickside.iml" />

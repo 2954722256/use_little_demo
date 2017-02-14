@@ -31,7 +31,6 @@ public class MainActivity extends AutoLayoutActivity {
         }, 500);
 
         sv.setOnClickListener(new View.OnClickListener() {
-
             @Override public void onClick(View v) {
                 if (sv.getState() == AnimatedSvgView.STATE_FINISHED) {
                     sv.start();
@@ -59,6 +58,11 @@ public class MainActivity extends AutoLayoutActivity {
         setSvg(svgView, SVG.values()[index]);
         setSvg(svgView2, SVG.values()[index]);
     }
+
+    public void doSvgFile(View view){
+
+    }
+
 
     public void onPrevious(View view) {
         if (--index < 0) index = SVG.values().length - 1;

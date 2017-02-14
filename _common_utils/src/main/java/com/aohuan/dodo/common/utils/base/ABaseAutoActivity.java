@@ -11,11 +11,15 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.aohuan.dodo.common.utils.nohttp.HttpListener;
+import com.yolanda.nohttp.rest.Request;
 import com.zhy.autolayout.AutoFrameLayout;
 import com.zhy.autolayout.AutoLinearLayout;
 import com.zhy.autolayout.AutoRelativeLayout;
 
 import butterknife.ButterKnife;
+
+
 
 /**
  * Created by dodo_lihao on 2016/12/30.
@@ -96,5 +100,18 @@ public abstract class ABaseAutoActivity extends AppCompatActivity {
 
         return super.onCreateView(name, context, attrs);
     }
+
+
+
+//    public <T> void request(int what, Request<T> request, HttpListener<T> callback, boolean canCancel, boolean isLoading) {
+//        request.setCancelSign(this);
+//        CallServer.getRequestInstance().add(this, what, request, callback, canCancel, isLoading);
+//    }
+//
+//    @Override
+//    protected void onDestroy() {
+//        CallServer.getRequestInstance().cancelBySign(this);
+//        super.onDestroy();
+//    }
 
 }

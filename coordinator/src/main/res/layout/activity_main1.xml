@@ -14,6 +14,15 @@
         app:layout_behavior="com.aohuan.dodo.coordinator.do_.utils.behavior.DodoBehavior0s"
         />
 
+    <!--<Button-->
+        <!--android:id="@+id/btn2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:background="#888888"-->
+        <!--android:text="  Dodo Follow22  "-->
+        <!--app:layout_behavior="com.aohuan.dodo.coordinator.do_.utils.behavior.DodoBehavior0z"-->
+        <!--/>-->
+
     <!--android:layout_gravity="top|right"-->
     <com.aohuan.dodo.coordinator.do_.utils.view.DodoMoveView
         android:text="Main"

@@ -20,6 +20,7 @@
         app:sidebarTextSize="@dimen/textSize_quicksidebartips" />
     <!-- 这个是字母栏的提示 -->
     <!--下面的自定义属性都是默认的,可以不写-->
+    <!--android:layout_alignParentRight="true"-->
     <com.bigkoo.quicksidebar.QuickSideBarView
         android:id="@id/quickSideBarView"
         android:layout_width="20dp"

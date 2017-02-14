@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页导航的跳转名字 -->
+    <string-array name="typelist">
+
+
+        <!-- PART 0 -->
+        <item>0 ARouter</item>
+        <item>1 ARouter</item>
+        <item>2 ARouter</item>
+        <item>3 ARouter</item>
+
+
+        <!--&lt;!&ndash; PART 1 &ndash;&gt;-->
+        <!--<item>0 Rv的LinearLayoutManager纵向动态高度</item>-->
+        <!--<item>1 Rv的LinearLayoutManager各种LayoutManager</item>-->
+        <!--<item>2 Rv的LinearLayoutManager横向xxx</item>-->
+        <!--<item>3 Rv的</item>-->
+        <!--<item>4 Rv的</item>-->
+        <!--<item>5 Rv的</item>-->
+
+
+        <!--&lt;!&ndash; PART 2 &ndash;&gt;-->
+        <!--<item>0 header List in SectionedRecyclerViewAdapter</item>-->
+        <!--<item>1 headerAndFooter List in SectionedRecyclerViewAdapter</item>-->
+        <!--<item>2 Expandable List in SectionedRecyclerViewAdapter</item>-->
+        <!--<item>3 Expandable Grid header in SectionedRecyclerViewAdapter</item>-->
+        <!--<item>4 MultiType in SectionedRecyclerViewAdapter</item>-->
+
+        <!--&lt;!&ndash; PART 3 &ndash;&gt;-->
+        <!--<item>0 系统 SwipeRefreshLayout</item>-->
+        <!--<item>1 【暂时没有调通】鸿洋的loadmore</item>-->
+        <!--<item>2 【版本有问题】HomHomLin - PullToRefreshRecyclerView</item>-->
+        <!--<item>3 BGA 1</item>-->
+        <!--<item>4 BGA 2 浩洋的封装</item>-->
+        <!--<item>5 BGA 3 type设置</item>-->
+
+        <!--&lt;!&ndash; PART 4 &ndash;&gt;-->
+        <!--<item>0 系统 SwipeRefreshLayout 嵌套 CoordinatorLayout </item>-->
+        <!--<item>1 zzzz</item>-->
+        <!--<item>2 zzzz</item>-->
+        <!--<item>3 zzzz</item>-->
+        <!--<item>4 zzzz</item>-->
+        <!--<item>5 zzzz</item>-->
+
+
+        <!--&lt;!&ndash; PART 5 &ndash;&gt;-->
+        <!--<item>0 viewpager and PagerSlidingTabStrip </item>-->
+        <!--<item>1 TabLayout</item>-->
+        <!--<item>2 child ViewPager in RadioGroup ViewPager</item>-->
+        <!--<item>3 child ViewPager in TabLayout （）</item>-->
+        <!--<item>4 HorizontalListView in ViewPager </item>-->
+        <!--<item>5 zzzz</item>-->
+
+        <!--&lt;!&ndash; PART 6 &ndash;&gt;-->
+        <!--<item>0 AAAA </item>-->
+
+    </string-array>
+
+    <!-- 一级菜单 -->
+    <string-array name="typetop">
+        <!-- PART N -->
+        <item>PART 0 Alibaba 的 ARouter</item>
+        <!--<item>PART 1 RecycleView简单使用</item>-->
+        <!--<item>PART 2 SectionedRecyclerViewAdapter简单使用</item>-->
+        <!--<item>PART 3 刷新相关</item>-->
+        <!--<item>PART 4 刷新 和 Coordiate</item>-->
+        <!--<item>PART 5 tabstrip 一些导航类似的</item>-->
+        <!--<item>PART 6 Uni 一些ui项目的</item>-->
+        <!--<item>PART 7 xxxx Temp</item>-->
+    </string-array>
+
+</resources>

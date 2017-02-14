@@ -37,11 +37,11 @@ public class DodoBehavior0s extends CoordinatorLayout.Behavior<Button> {
         return true;
     }
 
-    private void setPosition(View v, int x, int y) {
-        CoordinatorLayout.MarginLayoutParams layoutParams = (CoordinatorLayout.MarginLayoutParams) v.getLayoutParams();
+    private void setPosition(View btn, int x, int y) {
+        CoordinatorLayout.MarginLayoutParams layoutParams = (CoordinatorLayout.MarginLayoutParams) btn.getLayoutParams();
         layoutParams.leftMargin = x;
         layoutParams.topMargin = y;
-        v.setLayoutParams(layoutParams);
+        btn.setLayoutParams(layoutParams);
     }
 
 }

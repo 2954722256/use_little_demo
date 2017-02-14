@@ -7,4 +7,5 @@ package com.aohuan.dodo.common.utils.adapter.bean;
 public class ChildBean {
     public String name;
     public Class cls;
+    public ICallBack mICallBack;
 }

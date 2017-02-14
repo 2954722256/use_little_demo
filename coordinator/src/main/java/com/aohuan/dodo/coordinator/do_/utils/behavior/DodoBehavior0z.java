@@ -49,7 +49,7 @@ public class DodoBehavior0z extends CoordinatorLayout.Behavior<Button> {
         int y = height - top - btn.getHeight();
 
         setPosition(btn, x, y);
-        btn.getMeasuredWidth();
+//        btn.getMeasuredWidth();
         return true;
     }
 

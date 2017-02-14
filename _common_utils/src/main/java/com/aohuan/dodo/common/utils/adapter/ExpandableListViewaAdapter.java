@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aohuan.dodo.common.utils.adapter.bean.ChildBean;
+import com.aohuan.dodo.common.utils.adapter.bean.ICallBack;
 import com.aohuan.dodo.common.utils.adapter.bean.TypeBean;
 
 import java.util.ArrayList;
@@ -103,15 +104,17 @@ public class ExpandableListViewaAdapter extends BaseExpandableListAdapter {
             string = ((ChildBean) obj).name;
             tvHeight = 200;
             final Class cls = ((ChildBean) obj).cls;
+            final ICallBack mICallBack = ((ChildBean) obj).mICallBack;
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (cls == null) {
+                    if (cls == null && mICallBack == null) {
                         Toast.makeText(mContext, "没有设置，嘿嘿！！！", Toast.LENGTH_SHORT).show();
-                    } else {
+                    } else if(cls != null){
                         mContext.startActivity(new Intent(mContext, ((ChildBean) obj).cls));
+                    } else if(mICallBack !=null){
+                        mICallBack.doSth();
                     }
-
                 }
             });
         } else {

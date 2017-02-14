@@ -7,6 +7,8 @@ import android.support.v4.widget.NestedScrollView;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.aohuan.dodo.coordinator.do_.utils.view.DodoMoveView;
+
 /**
  * Created by dodo  2390183798 on 2016/10/31.
  * 参考：  http://blog.csdn.net/qibin0506/article/details/50290421
@@ -20,7 +22,6 @@ public class DodoBehavior1scroll extends CoordinatorLayout.Behavior<View> {
     public DodoBehavior1scroll(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
-
 
     @Override
     public boolean onStartNestedScroll(CoordinatorLayout coordinatorLayout, View child, View directTargetChild, View target, int nestedScrollAxes) {

@@ -9,6 +9,16 @@ public class NameHelper {
         ChildBean bean = new ChildBean();
         bean.name = name;
         bean.cls = cls;
+        bean.mICallBack = null;
         return bean;
     }
+
+    public static ChildBean setBeanOther(String name, ICallBack iCallBack) {
+        ChildBean bean = new ChildBean();
+        bean.name = name;
+        bean.cls = null;
+        bean.mICallBack = iCallBack;
+        return bean;
+    }
+
 }
