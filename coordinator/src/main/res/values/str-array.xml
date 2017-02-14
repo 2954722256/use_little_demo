@@ -27,6 +27,7 @@
         <item>3 新建Activity（Tabbed） 添加 TabLayout</item>
         <item>4 新建Activity（Scrolling）CollapsingToolbarLayout中添加Image</item>
         <item>5 新建Activity（NavigationDrawer）include中添加NestedScrollView</item>
+        <item>6 上面5， 添加一个底部的Footer</item>
 
         <!-- PART B -->
         <item>0 BBB</item>

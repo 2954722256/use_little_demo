@@ -24,12 +24,14 @@ import com.aohuan.dodo.coordinator.do_.do3.Main3Activity;
 import com.aohuan.dodo.coordinator.do_.do4.Main4Activity;
 import com.aohuan.dodo.coordinator.do_.do5.Main5Activity;
 import com.aohuan.dodo.coordinator.do_.do6.Main6Activity;
+import com.aohuan.dodo.coordinator.do_.do7.Main7Activity;
 import com.aohuan.dodo.coordinator.doa.doa0.MainA0Activity;
 import com.aohuan.dodo.coordinator.doa.doa1.MainA1Activity;
 import com.aohuan.dodo.coordinator.doa.doa2.MainA2Activity;
 import com.aohuan.dodo.coordinator.doa.doa3.MainA3Activity;
 import com.aohuan.dodo.coordinator.doa.doa4.MainA4Activity;
 import com.aohuan.dodo.coordinator.doa.doa5.MainA5Activity;
+import com.aohuan.dodo.coordinator.doa.doa6.MainA6Activity;
 import com.aohuan.dodo.coordinator.dob.MainB0Activity;
 import com.aohuan.dodo.coordinator.dob.MainB1Activity;
 import com.aohuan.dodo.coordinator.dob.MainB2Activity;
@@ -87,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public static final int PART_1 = 0;
     public static final int PART_A = 8;
-    public static final int PART_B = PART_A + 6;
+    public static final int PART_B = PART_A + 7;
     public static final int PART_N = PART_B + 5;
 
 
@@ -110,8 +112,8 @@ public class MainActivity extends AppCompatActivity {
                 return setBeanName(name, Main5Activity.class);
             case PART_1 +6:
                 return setBeanName(name, Main6Activity.class);
-//            case PART_1 +7:
-//                toActivity(name, FullscreenActivity.class);
+            case PART_1 +7:
+                return setBeanName(name, Main7Activity.class);
 //                break;
 
             ////===========PART_A
@@ -128,6 +130,8 @@ public class MainActivity extends AppCompatActivity {
                 return setBeanName(name, MainA4Activity.class);
             case PART_A + 5:
                 return setBeanName(name, MainA5Activity.class);
+            case PART_A + 6:
+                return setBeanName(name, MainA6Activity.class);
 
             ////===========PART_B
             case PART_B + 0:
